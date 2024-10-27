@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardPlaces = () => {
+const CardPlaces = ({ info }) => {
   return (
     <div className="container_card_places">
       <img
@@ -8,13 +8,13 @@ const CardPlaces = () => {
         src="/images/anillo-de-bodas.png"
         alt="argollas"
       />
-        <h3>Ceremonia</h3>
-        <h4>Día</h4>
-        <p>Sábado 15 de febrero - 17hs</p>
-        <h4>Lugar</h4>
-        <p>Parroquia La Asunción</p>
-        <h4>Dirección</h4>
-        <p>Barrio el Polo</p>
+      <h3>{info.title}</h3>
+      <h4>{info.date.title}</h4>
+      <p>{info.date.info}</p>
+      <h4>{info.place.title}</h4>
+      <p>{info.place.info}</p>
+      <h4>{info.address.title}</h4>
+      <p>{info.place.info}</p>
     </div>
   );
 };

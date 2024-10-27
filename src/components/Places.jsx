@@ -1,15 +1,15 @@
 import React from "react";
 import CardPlaces from "./CardPlaces";
+import infoPlaces from "../mocks/info.json";
 
 const Places = () => {
   return (
     <div className="container_places">
-      <div className="border_card">
-        <CardPlaces />
-      </div>
-      <div className="border_card">
-        <CardPlaces />
-      </div>
+      {infoPlaces.map((info, index) => (
+        <div className="border_card">
+          <CardPlaces key={index} info={info} />
+        </div>
+      ))}
     </div>
   );
 };

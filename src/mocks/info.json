@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Ceremonia",
+        "date": { "title": "Día", "info": "Sábado 15 de febrero - 15hs" },
+        "place": { "title": "Lugar", "info": "Parroquia La Asunción" },
+        "address": { "title": "Dirección", "info": "Barrio el Polo" }
+    },
+    {
+        "title": "Recepción",
+        "date": { "title": "Día", "info": "Sábado 15 de febrero - 19hs" },
+        "place": { "title": "Lugar", "info": "Condominio el Condado" },
+        "address": { "title": "Dirección", "info": "Calle Condado" }
+    }
+]
