@@ -5,7 +5,7 @@ const CardPlaces = () => {
     <div className="container_card_places">
       <img
         className="img_rings"
-        src="../../public/img/anillo-de-bodas.png"
+        src="/images/anillo-de-bodas.png"
         alt="argollas"
       />
         <h3>Ceremonia</h3>
