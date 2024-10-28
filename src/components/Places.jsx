@@ -6,8 +6,8 @@ const Places = () => {
   return (
     <div className="container_places">
       {infoPlaces.map((info, index) => (
-        <div className="border_card">
-          <CardPlaces key={index} info={info} />
+        <div key={index} className="border_card">
+          <CardPlaces info={info} />
         </div>
       ))}
     </div>
