@@ -190,9 +190,15 @@
   }
 }
 
-/* ----------------------------- Places ----------------------------- */
+/* ----------------------------- @media ----------------------------- */
 @media (max-width: 420px) {
   .border_card {
     width: 95%;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 480px){
+  .container_head {
+    height: calc(100vh + 5em);
   }
 }
