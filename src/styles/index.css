@@ -301,7 +301,7 @@ h3 {
     background-color: var(--primary-color);
     color: var(--text-btn-color);
     font-size: 2em;
-    padding: 0.1em 1.6em;
+    padding: 0.3em 1.6em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
@@ -377,7 +377,7 @@ h3 {
     }
     
     .container_text_map {
-      padding: 0.1em 1.2em;
+      padding: 0.3em 1.2em;
       font-size: 1.5em;
     }
 
