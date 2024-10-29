@@ -1,4 +1,9 @@
 :root {
+
+  /* font-family: 'Cinzel Decorative', serif; */
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Playfair Display', serif; */
+
   --primary-color: #254636;
   --secondary-color: #f3ccb3;
   --third-color: #1e3d2e;
@@ -25,6 +30,13 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Great Vibes", cursive;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -160,14 +172,17 @@
   justify-content: space-evenly;
   align-items: center;
 
-  box-shadow: 0px 6px 15px -3px var(--primary-color);
   background-color: var(--light-primary-color);
+  box-shadow: 0px 6px 15px -3px var(--primary-color);
   border-radius: 10px;
 }
 
 .img_rings {
-  width: 100px;
+  width: 200px;
   height: 100%;
+  transform: scale(1.7);
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 /* ----------------------------- CARD DATE ----------------------------- */
@@ -182,9 +197,9 @@
     width: 100px;
     font-size: 2.2em;
     color: var(--pale-cream);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
-
+  
   .text_date {
     font-size: 1.3em;
     color: var(--pale-cream);
@@ -226,7 +241,7 @@
     align-items: center;
     gap: 1.5em;
 
-    .img_rings {
+    .img_places {
       width: 90px;
     }
   }
@@ -250,17 +265,38 @@
 
 .btn_card_places {
   border: none;
-  background-color: var(--light-primary-color);
-  color: var(--text-primary);
-  font-size: 1.3em;
-  padding: 0.4em 1.6em;
-  margin-top: 0.5em;
-  border-radius: 15px;
-
+  background-color: var(--pale-cream);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+
+  .container_map_icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5px;
+  }
+
+  .container_text_map {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    font-size: 1.5em;
+    padding: 0.4em 1.6em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5px;
+  }
 
   .map_icon {
     width: 50px;
@@ -272,6 +308,7 @@
 /* ---------------------------------------------------------------------- */
 
 @media (max-width: 483px) {
+
   /* ============================ HEAD Section ============================ */
   .recuadro {
     padding: 1.5em 1em;
@@ -292,7 +329,7 @@
       width: 70px;
       font-size: 2em;
     }
-  
+
     .text_date {
       font-size: 1em;
     }
@@ -304,41 +341,51 @@
     border: none;
     background-color: var(--pale-cream);
   }
+
   /* =========================== Places Section =========================== */
   .container_card_places {
     padding: 1em;
     gap: 1em;
-  
+
     .content_info_places {
-      .img_rings {
+      .img_places {
         width: 80px;
       }
     }
-  
+
     h3 {
       font-size: 2em;
     }
-  
+
     p {
       font-size: 1em;
     }
   }
 
   .btn_card_places {
-    font-size: 1em;
-    padding: 0.4em 1.2em;
-  
+    .container_map_icon {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .container_text_map {
+      padding: 0.4em 1.2em;
+      font-size: 1.2em;
+    }
+
     .map_icon {
-      width: 30px;
+      width: 35px;
     }
   }
 }
+
 /* El amor es paciente, es bondadoso. El amor no es envidioso 
 ni jactancioso ni orgulloso. No se comporta con rudeza, 
 no es egoísta, no se enoja fácilmente, no guarda rencor. 
 1 Corintios 13, 4-5*/
 
 @media (max-width: 565px) {
+
   /* ======================== TIME REALIZE Section ======================== */
   .container_card_time {
     min-width: 330px;
@@ -354,21 +401,13 @@ no es egoísta, no se enoja fácilmente, no guarda rencor.
 
 
 /* Mobile (horizontal) y dispositivos más grandes */
-@media (max-width: 768px) {
-  
-}
+@media (max-width: 768px) {}
 
 /* Tablets y pantallas pequeñas */
-@media (max-width: 1024px) {
-  
-}
+@media (max-width: 1024px) {}
 
 /* Desktop y pantallas más grandes */
-@media (max-width: 1200px) {
-  
-}
+@media (max-width: 1200px) {}
 
 /* Pantallas extra grandes (4K o más) */
-@media (min-width: 1201px) {
-  
-}
+@media (min-width: 1201px) {}

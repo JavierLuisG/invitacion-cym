@@ -5,7 +5,7 @@ const CardPlaces = ({ info }) => {
     <div className="container_card_places">
       <h3>{info.title}</h3>
       <div className="content_info_places">
-        <img className="img_rings" src={info.image} alt="argollas" />
+        <img className="img_places" src={info.image} alt="argollas" />
         <div className="info_places">
           <p>
             {info.date.title}: {info.date.info}
@@ -20,11 +20,10 @@ const CardPlaces = ({ info }) => {
         </div>
       </div>
       <button className="btn_card_places">
-        <img
-          className="map_icon"
-          src="/map.svg"
-        />
-        Ver mapa
+        <div className="container_map_icon">
+          <img className="map_icon" src="/map-movible.svg" />
+        </div>
+        <div className="container_text_map">Ver mapa</div>
       </button>
     </div>
   );
