@@ -1,14 +1,18 @@
 [
     {
         "title": "Ceremonia",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero - 15hs" },
+        "date": { "title": "Día", "info": "Sábado 15 de febrero" },
+        "hour": { "title": "Hora", "info": "15:00 hrs" },
         "place": { "title": "Lugar", "info": "Parroquia La Asunción" },
-        "address": { "title": "Dirección", "info": "Barrio el Polo" }
+        "address": { "title": "Dirección", "info": "Barrio el Polo" },
+        "image": "/icon-church.svg"
     },
     {
         "title": "Recepción",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero - 19hs" },
+        "date": { "title": "Día", "info": "Sábado 15 de febrero" },
+        "hour": { "title": "Hora", "info": "19:00 hrs" },
         "place": { "title": "Lugar", "info": "Condominio el Condado" },
-        "address": { "title": "Dirección", "info": "Calle Condado" }
+        "address": { "title": "Dirección", "info": "Calle Condado" },
+        "image": "/drink-glasses.svg"
     }
 ]

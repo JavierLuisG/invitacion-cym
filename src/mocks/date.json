@@ -3,9 +3,9 @@
         "date": "2025-02-15T15:00:00"
     },
     {
-        "days": "DÍAS",
-        "hours": "HORAS",
-        "minutes": "MINÚTOS",
-        "seconds": "SEGÚNDOS"
+        "days": "Días",
+        "hours": "Horas",
+        "minutes": "Minutos",
+        "seconds": "Segundos"
     }
 ]

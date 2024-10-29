@@ -1,8 +1,21 @@
 :root {
-  --primary-color: #263238;
-  --secondary-color: #DBA764;
-  --third-color: #1e282e;
-  --bg-fondo: #1e282eb7;
+  --primary-color: #254636;
+  --secondary-color: #f3ccb3;
+  --third-color: #1e3d2e;
+  --bg-opacity: #25463679;
+  --pale-cream: #fcfff6;
+  --light-primary-color: #2b4e3d;
+
+  --text-primary: #FFF5E1;
+  --text-secondary: #1e3d2e;
+
+  --olive-green: #46460c;
+  --soft-mustard: #E1C16E;
+  --sage-green: #9EA66D;
+  --terracotta: #D68A59;
+  --dusty-rose: #B5838D;
+  --warm-sand: #E2C4A6;
+  --deep-forest-green: #556B2F;
 }
 
 * {
@@ -14,26 +27,31 @@
   box-sizing: border-box;
 }
 
-/* ----------------------------- HOME ----------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ============================ HOME Section ============================ */
+/* ---------------------------------------------------------------------- */
 .container {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--light-primary-color);
 }
 
 .container_home {
-  max-width: 1500px;
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
+  box-shadow: 0px 0px 15px 15px var(--bg-opacity);
 }
 
-/* ----------------------------- HEAD ----------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ============================ HEAD Section ============================ */
+/* ---------------------------------------------------------------------- */
 .container_head {
-  background-color: var(--primary-color);
   position: relative;
   overflow: hidden;
+  background-color: var(--pale-cream);
   height: 100vh;
   width: 100%;
 
@@ -44,46 +62,27 @@
 }
 
 .container_img_principal {
-  display: flex;
-  width: calc(564px * 3);
-  animation: scroll 6s linear infinite;
-
+  width: 100%;
   position: relative;
   z-index: 1;
 }
 
-.carousel-image {
+.fixed_image {
   width: 100%;
-  height: auto;
+  height: 100vh;
   object-fit: cover;
-}
-
-.fixed-image {
-  display: none;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(-192px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .recuadro {
   position: absolute;
   z-index: 2;
-  padding: 3em 2em;
+  padding: 2em 1em;
   margin: 0 3em;
-  background-color: var(--bg-fondo);
+  max-width: 450px;
+  background-color: var(--bg-opacity);
   border: 2px solid var(--secondary-color);
   box-shadow: 0px 0px 9px -1px var(--secondary-color);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,66 +91,83 @@
   gap: 0.5em;
 
   h1 {
-    padding-bottom: 0.5em;
     font-size: 5em;
     font-weight: lighter;
-    color: var(--secondary-color);
+    color: var(--text-primary);
   }
 
   &>p {
     padding: 0.3em;
     font-size: 1.7em;
-    color: var(--secondary-color);
+    color: var(--text-primary);
   }
+}
+
+.container_names {
+  padding-bottom: 1em;
 }
 
 .hr_line {
   width: 90%;
   height: 1px;
   border: none;
-  background-color: var(--secondary-color);
+  background-color: var(--text-primary);
   margin: 8px 0px;
 }
 
-/* ----------------------------- TIME REALIZE----------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ======================== TIME REALIZE Section ======================== */
+/* ---------------------------------------------------------------------- */
 .container_time_realize {
-  background-color: var(--third-color);
+  background-color: var(--pale-cream);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em 1em;
+  text-align: center;
+  padding: 2em 1em;
   gap: 1.5em;
 
-  h2 {
-    /* margin-top: 1em; */
-    color: var(--secondary-color);
-    font-size: 45px;
-    text-align: center;
+  .title_time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+    & p {
+      color: var(--text-secondary);
+      width: 70%;
+      font-size: 1.3em;
+      margin: auto 15px;
+    }
+
+    h2 {
+      color: var(--text-secondary);
+      font-size: 2.5em;
+      text-align: center;
+    }
   }
 }
 
 .container_card_time {
-  height: 100%;
+  max-width: 520px;
+  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1em;
-}
 
-.line_vertical {
-  width: 1px;
-  height: 90%;
-  border: none;
-  background-color: var(--secondary-color);
-  margin: 0px 8px;
+  box-shadow: 0px 6px 15px -3px var(--primary-color);
+  background-color: var(--light-primary-color);
+  border-radius: 10px;
 }
 
 .img_rings {
   width: 100px;
+  height: 100%;
 }
 
 /* ----------------------------- CARD DATE ----------------------------- */
@@ -164,132 +180,195 @@
 
   .number_date {
     width: 100px;
-    font-size: 4em;
-    color: var(--secondary-color);
+    font-size: 2.2em;
+    color: var(--pale-cream);
     margin-bottom: 10px;
   }
 
   .text_date {
-    font-size: 1.2em;
-    color: var(--secondary-color);
+    font-size: 1.3em;
+    color: var(--pale-cream);
   }
 }
 
-/* ----------------------------- Places ----------------------------- */
+.hr_vertical_line {
+  width: 1px;
+  height: 80px;
+  margin: 15px 0px;
+  border: none;
+  background-color: var(--pale-cream);
+}
+
+/* ---------------------------------------------------------------------- */
+/* =========================== Places Section =========================== */
+/* ---------------------------------------------------------------------- */
 .container_places {
-  background-color: var(--primary-color);
+  background-color: var(--pale-cream);
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 3em 1em;
-  gap: 2em;
-}
-
-.border_card {
-  padding: 2em;
-  border: 1px solid var(--secondary-color);
-  box-shadow: 0px 0px 9px -3px var(--secondary-color);
-  border-radius: 5px;
 }
 
 .container_card_places {
-  padding: 2em 3em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--third-color);
-  border-radius: 12px;
-  text-align: center;
+  gap: 1em;
 
-  h3 {
-    font-size: 3em;
-    font-weight: lighter;
-    color: var(--secondary-color);
+  .content_info_places {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+
+    .img_rings {
+      width: 90px;
+    }
   }
 
-  h4 {
-    margin-top: 20px;
-    font-size: 2em;
-    font-weight: lighter;
-    color: var(--secondary-color);
+  .info_places {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    color: var(--text-secondary);
   }
 
   p {
-    margin-top: 5px;
-    font-size: 1em;
-    font-weight: lighter;
-    color: var(--secondary-color);
+    font-size: 1.2em;
+    color: var(--text-secondary);
   }
 }
 
-/* ----------------------------- @media ----------------------------- */
-@media (max-width: 420px) {
-  .border_card {
-    width: 95%;
-  }
-  
-  .container_card_places {
-    padding: 1em 1.5em;
+.btn_card_places {
+  border: none;
+  background-color: var(--light-primary-color);
+  color: var(--text-primary);
+  font-size: 1.3em;
+  padding: 0.4em 1.6em;
+  margin-top: 0.5em;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  .map_icon {
+    width: 50px;
   }
 }
 
-@media (max-height: 570px),
-(max-width: 440px) {
-  .container_head {
-    height: calc(100% + 5em);
-  }
+/* ---------------------------------------------------------------------- */
+/* ======================= @MEIDAS QUERIES Section ====================== */
+/* ---------------------------------------------------------------------- */
 
-  .container_img_principal {
-    height: 570px;
-  }
-
+@media (max-width: 483px) {
+  /* ============================ HEAD Section ============================ */
   .recuadro {
     padding: 1.5em 1em;
 
     h1 {
-      padding-bottom: 0.3em;
-      font-size: 3.5em;
+      font-size: 4em;
     }
 
     &>p {
       padding: 0.3em;
-      font-size: 1.3em;
+      font-size: 1.4em;
+    }
+  }
+
+  /* ======================== TIME REALIZE Section ======================== */
+  .card_date {
+    .number_date {
+      width: 70px;
+      font-size: 2em;
+    }
+  
+    .text_date {
+      font-size: 1em;
+    }
+  }
+
+  .hr_vertical_line {
+    height: 64px;
+    margin: 12px 0px;
+    border: none;
+    background-color: var(--pale-cream);
+  }
+  /* =========================== Places Section =========================== */
+  .container_card_places {
+    padding: 1em;
+    gap: 1em;
+  
+    .content_info_places {
+      .img_rings {
+        width: 80px;
+      }
+    }
+  
+    h3 {
+      font-size: 2em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .btn_card_places {
+    font-size: 1em;
+    padding: 0.4em 1.2em;
+  
+    .map_icon {
+      width: 30px;
     }
   }
 }
+/* El amor es paciente, es bondadoso. El amor no es envidioso 
+ni jactancioso ni orgulloso. No se comporta con rudeza, 
+no es egoísta, no se enoja fácilmente, no guarda rencor. 
+1 Corintios 13, 4-5*/
 
-@media (max-width: 450px) {
-  .container_head {
-    height: 100vh;
-
-  }
-  .carousel-image {
-    height: 100vh;
+@media (max-width: 565px) {
+  /* ======================== TIME REALIZE Section ======================== */
+  .container_card_time {
+    min-width: 330px;
+    justify-content: space-evenly;
   }
 }
-@media (max-width: 450px) {
-  .container_head {
-    flex-direction: column;
-    gap: 0;
-  }
-  .container_img_principal {
-    display: flex;
-    width: 130%;
-    height: 100vh;
-    animation: none;
-  }
 
-  .carousel-image {
-    display: none;
-  }
 
-  /* Agrega una nueva clase para mostrar la imagen fija */
-  .fixed-image {
-    display: inline;
-    width: 100%;
-  }
+
+
+
+
+
+
+/* Mobile (horizontal) y dispositivos más grandes */
+@media (max-width: 768px) {
+  
+}
+
+/* Tablets y pantallas pequeñas */
+@media (max-width: 1024px) {
+  
+}
+
+/* Desktop y pantallas más grandes */
+@media (max-width: 1200px) {
+  
+}
+
+/* Pantallas extra grandes (4K o más) */
+@media (min-width: 1201px) {
+  
 }
