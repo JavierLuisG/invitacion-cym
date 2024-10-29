@@ -13,6 +13,7 @@
 
   --text-primary: #FFF5E1;
   --text-secondary: #1e3d2e;
+  --text-btn-color: white;
 
   --olive-green: #46460c;
   --soft-mustard: #E1C16E;
@@ -37,6 +38,20 @@ h2,
 h3,
 h4 {
   font-family: "Great Vibes", cursive;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: lighter;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -102,12 +117,6 @@ h4 {
   text-align: center;
   gap: 0.5em;
 
-  h1 {
-    font-size: 5em;
-    font-weight: lighter;
-    color: var(--text-primary);
-  }
-
   &>p {
     padding: 0.3em;
     font-size: 1.7em;
@@ -157,7 +166,6 @@ h4 {
 
     h2 {
       color: var(--text-secondary);
-      font-size: 2.5em;
       text-align: center;
     }
   }
@@ -172,8 +180,9 @@ h4 {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: var(--light-primary-color);
-  box-shadow: 0px 6px 15px -3px var(--primary-color);
+  background-color: var(--pale-cream);
+  /* background-color: var(--light-primary-color); */
+  /* box-shadow: 0px 6px 15px -3px var(--primary-color); */
   border-radius: 10px;
 }
 
@@ -196,22 +205,27 @@ h4 {
   .number_date {
     width: 100px;
     font-size: 2.2em;
-    color: var(--pale-cream);
+    color: var(--primary-color);
+    font-weight: bolder;
+    /* color: var(--pale-cream); */
     margin-bottom: 5px;
   }
   
   .text_date {
     font-size: 1.3em;
-    color: var(--pale-cream);
+    color: var(--primary-color);
+    font-weight: bolder;
+    /* color: var(--pale-cream); */
   }
 }
 
 .hr_vertical_line {
-  width: 1px;
+  width: 2px;
   height: 80px;
   margin: 15px 0px;
   border: none;
-  background-color: var(--pale-cream);
+  background-color: var(--light-primary-color);
+  /* background-color: var(--pale-cream); */
 }
 
 /* ---------------------------------------------------------------------- */
@@ -253,7 +267,6 @@ h4 {
   }
 
   h3 {
-    font-size: 2.5em;
     color: var(--text-secondary);
   }
 
@@ -269,25 +282,26 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   .container_map_icon {
     background-color: var(--primary-color);
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 5px;
+    cursor: pointer;
   }
-
+  
   .container_text_map {
     background-color: var(--primary-color);
-    color: var(--text-primary);
-    font-size: 1.5em;
-    padding: 0.4em 1.6em;
+    color: var(--text-btn-color);
+    font-size: 2em;
+    padding: 0.1em 1.6em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
@@ -296,10 +310,11 @@ h4 {
     align-items: center;
     position: relative;
     right: 5px;
+    cursor: pointer;
   }
 
   .map_icon {
-    width: 50px;
+    width: 60px;
   }
 }
 
@@ -308,7 +323,6 @@ h4 {
 /* ---------------------------------------------------------------------- */
 
 @media (max-width: 483px) {
-
   /* ============================ HEAD Section ============================ */
   .recuadro {
     padding: 1.5em 1em;
@@ -335,19 +349,13 @@ h4 {
     }
   }
 
-  .hr_vertical_line {
-    height: 64px;
-    margin: 12px 0px;
-    border: none;
-    background-color: var(--pale-cream);
-  }
-
   /* =========================== Places Section =========================== */
   .container_card_places {
     padding: 1em;
     gap: 1em;
 
     .content_info_places {
+      gap: 0.5em;
       .img_places {
         width: 80px;
       }
@@ -364,17 +372,17 @@ h4 {
 
   .btn_card_places {
     .container_map_icon {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
     }
     
     .container_text_map {
-      padding: 0.4em 1.2em;
-      font-size: 1.2em;
+      padding: 0.1em 1.2em;
+      font-size: 1.5em;
     }
 
     .map_icon {
-      width: 35px;
+      width: 42px;
     }
   }
 }
