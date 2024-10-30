@@ -1,5 +1,3 @@
-import React from "react";
-
 const NumberTime = ({ value, text }) => {
   return (
     <div className="card_date flex_column">

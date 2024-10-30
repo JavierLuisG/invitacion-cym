@@ -1,15 +1,11 @@
-import React from "react";
 import CarouselImage from "./CarouselImage";
 
 const OurLove = () => {
   const imagesCarousel = [
-    "https://www.fixdate.io/modelo-invitacion/104/img/galeria/4.jpg",
-    // "https://www.fixdate.io/modelo-invitacion/104/img/galeria/1.jpg",
-    // "https://www.fixdate.io/modelo-invitacion/104/img/galeria/2.jpg",
-    // "https://www.fixdate.io/modelo-invitacion/104/img/galeria/3.jpg",
+    "/images/image1.jpg",
   ];
   return (
-    <div className="container_ourlove flex_column box">
+    <div className="flex_column box">
       <div className="title flex_column">
         <p>
           El amor es paciente, es bondadoso. El amor no es envidioso ni

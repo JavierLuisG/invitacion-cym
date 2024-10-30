@@ -1,5 +1,3 @@
-import React from "react";
-
 const CardPlaces = ({ info }) => {
   return (
     <div className="container_card_places flex_column">
@@ -20,10 +18,8 @@ const CardPlaces = ({ info }) => {
         </div>
       </div>
       <button className="btn_card_places flex_row">
-        <div className="container_map_icon flex_column">
-          <img className="map_icon" src="/map-movible.svg" />
-        </div>
-        <div className="container_text_map flex_column">Ver mapa</div>
+        <img className="map_icon" src="/map-movible.svg" />
+        <div className="text_map_card">VER MAPA</div>
       </button>
     </div>
   );

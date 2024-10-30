@@ -3,14 +3,10 @@
   --secondary-color: #445a18;
   --third-color: #1e3d2e;
   --bg-opacity: #25463679;
-  --pale-cream: #fcfff6;
-  --light-primary-color: #2b4e3df1;
-  --light-secondary-color: #f3ccb348;
+  --pale-cream: #f5f5f5;
 
-  --text-primary: #FFF5E1;
-  --text-secondary: #203500;
-  --text-btn-color: white;
-
+  --text-primary: #203500;
+  --text-btn-color: #f5f5f5;
 }
 
 /* =========================== GENERAL STYLES =========================== */
@@ -18,7 +14,7 @@
 * {
   padding: 0;
   margin: 0;
-  color: black;
+  color: var(--text-primary);
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -32,8 +28,8 @@ h4 {
 }
 
 h1 {
-  font-size: 5em;
-  font-weight: lighter;
+  font-size: 4.5em;
+  font-weight: bolder;
   color: var(--text-primary);
 }
 
@@ -72,17 +68,13 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_bottom {
   /* box */
-  background-color: var(--light-primary-color);
   padding: 0;
 }
 
 .container_home {
   /* column */
-  max-width: 1024px;
   width: 100%;
   background-color: var(--pale-cream);
-  margin: auto;
-  box-shadow: 0px 0px 15px 15px var(--bg-opacity);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -90,54 +82,55 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+  height: 100vh;
 }
 
-.container_img_principal {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.img_adorno_head {
+  position: absolute;
   z-index: 1;
-}
-
-.fixed_image {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
 }
 
 .recuadro {
   /* column */
-  position: absolute;
+  position: relative;
   z-index: 2;
-  padding: 2em 1em;
-  margin: 0 3em;
-  max-width: 450px;
-  background-color: var(--bg-opacity);
-  border: 2px solid var(--secondary-color);
-  box-shadow: 0px 0px 9px -1px var(--secondary-color);
-  text-align: center;
-  gap: 0.5em;
-
-  &>p {
-    padding: 0.3em;
-    font-size: 1.7em;
-    color: var(--text-primary);
-  }
+  max-width: 600px;
+  width: 100%;
 }
 
-.container_names {
-  padding-bottom: 1em;
+.date {
+  position: relative;
+  z-index: 1;
+  padding: 0.3em 0.3em;
+  font-size: 2em;
+  background-color: var(--pale-cream);
 }
 
 .hr_line {
   width: 90%;
+  max-width: 500px;
   height: 1px;
   border: none;
-  background-color: var(--text-primary);
+  background-color: var(--primary-color);
   margin: 8px 0px;
+}
+
+.line_position {
+  position: absolute;
+  top: 20px;
+  bottom: 40px;
+}
+
+.text_head {
+  max-width: 600px;
+  width: 90%;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.img_anillos_head {
+  padding-top: 1em;
+  max-width: 220px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -148,42 +141,27 @@ h3 {
   gap: 0.5em;
 
   & p {
-    color: var(--text-secondary);
     width: 90%;
-    max-width: 650px;
+    max-width: 600px;
     font-size: 1.3em;
-    margin: auto 15px;
-  }
-
-  & h2 {
-    color: var(--text-secondary);
-    text-align: center;
   }
 
   & span {
-    color: var(--text-secondary);
+    /* ourlove */
     font-size: larger;
     font-weight: bold;
   }
 }
 
-
 .container_card_time {
   /* row */
-  max-width: 520px;
-  width: 90%;
+  width: 290px;
+  height: 290px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: var(--pale-cream);
-  border-radius: 10px;
-}
-
-.img_rings {
-  width: 200px;
-  height: 100%;
-  transform: scale(1.7);
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  justify-content: center;
+  box-shadow: 0px 0px 20px -6px var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
 }
 
 /* ----------------------------- CARD DATE ----------------------------- */
@@ -192,26 +170,24 @@ h3 {
   text-align: center;
 
   .number_date {
-    width: 100px;
-    font-size: 2.2em;
-    color: var(--primary-color);
+    width: 65px;
+    font-size: 2.5em;
     font-weight: bolder;
     margin-bottom: 5px;
   }
 
   .text_date {
-    font-size: 1.3em;
-    color: var(--primary-color);
+    font-size: 1.5em;
     font-weight: bolder;
   }
 }
 
 .hr_vertical_line {
-  width: 2px;
-  height: 80px;
+  width: 1px;
+  height: 45px;
   margin: 15px 0px;
   border: none;
-  background-color: var(--light-primary-color);
+  background-color: var(--bg-opacity);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -242,48 +218,24 @@ h3 {
     align-items: start;
     gap: 0.2em;
   }
-
-  h3 {
-    color: var(--text-secondary);
-  }
-
-  p {
-    font-size: 1.2em;
-    color: var(--text-secondary);
-  }
 }
 
 .btn_card_places {
   /* row */
   border: none;
-  background-color: var(--pale-cream);
+  background-color: var(--secondary-color);
+  padding: 0.5em 2.5em;
+  border-radius: 30px;
+  gap: 1em;
 
-  .container_map_icon {
-    /* column */
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    position: relative;
-    left: 5px;
-    cursor: pointer;
-  }
-  
-  .container_text_map {
-    /* column */
-    background-color: var(--secondary-color);
+  .text_map_card {
     color: var(--text-btn-color);
-    font-size: 2em;
-    padding: 0.3em 1.6em;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: relative;
-    right: 5px;
-    cursor: pointer;
+    font-size: 1.5em;
+    padding-right: 0.5em;
   }
 
   .map_icon {
-    width: 60px;
+    width: 38px;
   }
 }
 
@@ -291,38 +243,31 @@ h3 {
 /* =========================== Ourlove Section ========================== */
 /* ---------------------------------------------------------------------- */
 .foto_icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
   border-bottom: 2px solid var(--primary-color);
 }
 
 .carousel {
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  height: auto;
-  gap: 1em;
-}
-
-.cover_img {
-  padding: 0.5em 0.5em 4em 0.5em;
-  background-color: var(--secondary-color);
+  padding: auto; /* ToDo: se pone lo que realmente va */
 }
 
 .img_carousel {
   width: 100%;
-  max-width: 340px;
+  max-width: 650px;
 }
 
 /* ---------------------------------------------------------------------- */
 /* ======================= @MEIDAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
 
-@media (max-width: 483px) {
+@media (max-width: 480px) {
 
   /* ============================ HEAD Section ============================ */
-  .recuadro {
-    padding: 1.5em 1em;
+  .container_head {
+    padding: 2em;
+  }
 
+  .recuadro {
     h1 {
       font-size: 4em;
     }
@@ -333,80 +278,21 @@ h3 {
     }
   }
 
-  /* ======================== TIME REALIZE Section ======================== */
-  .card_date {
-    .number_date {
-      width: 70px;
-      font-size: 2em;
-    }
-
-    .text_date {
-      font-size: 1em;
-    }
-  }
-
   /* =========================== Places Section =========================== */
   .container_card_places {
-    /* padding: 1em; */
-    gap: 1em;
-
     .content_info_places {
       gap: 0.5em;
-
-      .img_places {
-        width: 80px;
-      }
-    }
-
-    h3 {
-      font-size: 2em;
     }
 
     p {
-      font-size: 1em;
-    }
-  }
-
-  .btn_card_places {
-    .container_map_icon {
-      width: 60px;
-      height: 60px;
-    }
-
-    .container_text_map {
-      padding: 0.3em 1.2em;
-      font-size: 1.5em;
-    }
-
-    .map_icon {
-      width: 42px;
+      font-size: 1.2em;
     }
   }
 }
 
-@media (max-width: 565px) {
-
-  /* ======================== TIME REALIZE Section ======================== */
-  .container_card_time {
-    min-width: 330px;
-    justify-content: space-evenly;
+/* (vertical) */
+@media (max-height: 600px) {
+  .container_head {
+    height: 550px;
   }
 }
-
-
-/* Mobile (horizontal) y dispositivos más grandes */
-@media (max-width: 768px) {
-  .img_carousel {
-    width: 100%;
-    max-width: 580px;
-  }
-}
-
-/* Tablets y pantallas pequeñas */
-@media (max-width: 1024px) {}
-
-/* Desktop y pantallas más grandes */
-@media (max-width: 1200px) {}
-
-/* Pantallas extra grandes (4K o más) */
-@media (min-width: 1201px) {}

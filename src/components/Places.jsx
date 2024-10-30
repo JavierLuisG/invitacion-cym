@@ -1,4 +1,3 @@
-import React from "react";
 import CardPlaces from "./CardPlaces";
 import infoPlaces from "../mocks/info.json";
 
