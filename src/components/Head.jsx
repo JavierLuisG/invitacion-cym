@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const Head = () => {
   return (
-    <div className="container_head">
+    <div className="container_head flex_row box">
       <div className="container_img_principal">
         <img
           src="https://i.pinimg.com/564x/88/80/e6/8880e64d8419c44708cece4cc7cef2f6.jpg"
@@ -10,10 +10,10 @@ const Head = () => {
           alt="Imagen fija"
         />
       </div>
-      <div className="recuadro">
+      <div className="recuadro flex_column">
         <div className="container_names">
           <h1>Cristian </h1>
-          <img src="/heart-movible.svg" width={38} alt="" />
+          <img src="/heart-movible.svg" width={70} alt="" />
           <h1>Mariapaz</h1>
         </div>
         <p>15.02.2025</p>

@@ -26,15 +26,15 @@ export const TimeRealize = () => {
   }
 
   return (
-    <div className="container_time_realize">
-      <div className="title_time">
+    <div className="flex_column box">
+      <div className="title flex_column">
         <p>
           Porque eres especial para nosotros esperamos contar con tu presencia
           el día de nuestra boda.
         </p>
         <h2>¡Te esperamos!</h2>
       </div>
-      <div className="container_card_time">
+      <div className="container_card_time flex_row">
         <NumberTime value={timeLeft.days} text={date[1].days} />
         <hr aria-orientation="vertical" className="hr_vertical_line" />
         <NumberTime value={timeLeft.hours} text={date[1].hours} />

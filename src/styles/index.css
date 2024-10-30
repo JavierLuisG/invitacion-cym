@@ -1,29 +1,20 @@
 :root {
-
-  /* font-family: 'Cinzel Decorative', serif; */
-  /* font-family: 'Dancing Script', cursive; */
-  /* font-family: 'Playfair Display', serif; */
-
-  --primary-color: #254636;
-  --secondary-color: #f3ccb3;
+  --primary-color: #203500;
+  --secondary-color: #445a18;
   --third-color: #1e3d2e;
   --bg-opacity: #25463679;
   --pale-cream: #fcfff6;
-  --light-primary-color: #2b4e3d;
+  --light-primary-color: #2b4e3df1;
+  --light-secondary-color: #f3ccb348;
 
   --text-primary: #FFF5E1;
-  --text-secondary: #1e3d2e;
+  --text-secondary: #203500;
   --text-btn-color: white;
 
-  --olive-green: #46460c;
-  --soft-mustard: #E1C16E;
-  --sage-green: #9EA66D;
-  --terracotta: #D68A59;
-  --dusty-rose: #B5838D;
-  --warm-sand: #E2C4A6;
-  --deep-forest-green: #556B2F;
 }
 
+/* =========================== GENERAL STYLES =========================== */
+/* ---------------------------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
@@ -54,20 +45,42 @@ h3 {
   font-size: 2.5em;
 }
 
+.box {
+  width: 100%;
+  background-color: var(--pale-cream);
+  text-align: center;
+  padding: 2em 1em;
+  gap: 1.5em;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ---------------------------------------------------------------------- */
 /* ============================ HOME Section ============================ */
 /* ---------------------------------------------------------------------- */
-.container {
-  width: 100%;
+.container_bottom {
+  /* box */
   background-color: var(--light-primary-color);
+  padding: 0;
 }
 
 .container_home {
+  /* column */
   max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  background-color: var(--pale-cream);
   margin: auto;
   box-shadow: 0px 0px 15px 15px var(--bg-opacity);
 }
@@ -76,20 +89,15 @@ h3 {
 /* ============================ HEAD Section ============================ */
 /* ---------------------------------------------------------------------- */
 .container_head {
+  /* row box */
   position: relative;
   overflow: hidden;
-  background-color: var(--pale-cream);
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
 }
 
 .container_img_principal {
   width: 100%;
+  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -101,6 +109,7 @@ h3 {
 }
 
 .recuadro {
+  /* column */
   position: absolute;
   z-index: 2;
   padding: 2em 1em;
@@ -109,11 +118,6 @@ h3 {
   background-color: var(--bg-opacity);
   border: 2px solid var(--secondary-color);
   box-shadow: 0px 0px 9px -1px var(--secondary-color);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   gap: 0.5em;
 
@@ -139,50 +143,38 @@ h3 {
 /* ---------------------------------------------------------------------- */
 /* ======================== TIME REALIZE Section ======================== */
 /* ---------------------------------------------------------------------- */
-.container_time_realize {
-  background-color: var(--pale-cream);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2em 1em;
-  gap: 1.5em;
+.title {
+  /* column */
+  gap: 0.5em;
 
-  .title_time {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
+  & p {
+    color: var(--text-secondary);
+    width: 90%;
+    max-width: 650px;
+    font-size: 1.3em;
+    margin: auto 15px;
+  }
 
-    & p {
-      color: var(--text-secondary);
-      width: 70%;
-      font-size: 1.3em;
-      margin: auto 15px;
-    }
+  & h2 {
+    color: var(--text-secondary);
+    text-align: center;
+  }
 
-    h2 {
-      color: var(--text-secondary);
-      text-align: center;
-    }
+  & span {
+    color: var(--text-secondary);
+    font-size: larger;
+    font-weight: bold;
   }
 }
 
+
 .container_card_time {
+  /* row */
   max-width: 520px;
   width: 90%;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-
   background-color: var(--pale-cream);
-  /* background-color: var(--light-primary-color); */
-  /* box-shadow: 0px 6px 15px -3px var(--primary-color); */
   border-radius: 10px;
 }
 
@@ -196,10 +188,7 @@ h3 {
 
 /* ----------------------------- CARD DATE ----------------------------- */
 .card_date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* column */
   text-align: center;
 
   .number_date {
@@ -207,15 +196,13 @@ h3 {
     font-size: 2.2em;
     color: var(--primary-color);
     font-weight: bolder;
-    /* color: var(--pale-cream); */
     margin-bottom: 5px;
   }
-  
+
   .text_date {
     font-size: 1.3em;
     color: var(--primary-color);
     font-weight: bolder;
-    /* color: var(--pale-cream); */
   }
 }
 
@@ -225,34 +212,24 @@ h3 {
   margin: 15px 0px;
   border: none;
   background-color: var(--light-primary-color);
-  /* background-color: var(--pale-cream); */
 }
 
 /* ---------------------------------------------------------------------- */
 /* =========================== Places Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_places {
-  background-color: var(--pale-cream);
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* row box */
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  text-align: left;
 }
 
 .container_card_places {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* column */
   gap: 1em;
 
   .content_info_places {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* row */
     gap: 1.5em;
 
     .img_places {
@@ -261,8 +238,8 @@ h3 {
   }
 
   .info_places {
-    display: flex;
-    flex-direction: column;
+    /* column */
+    align-items: start;
     gap: 0.2em;
   }
 
@@ -277,37 +254,29 @@ h3 {
 }
 
 .btn_card_places {
+  /* row */
   border: none;
   background-color: var(--pale-cream);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+
   .container_map_icon {
-    background-color: var(--primary-color);
+    /* column */
+    background-color: var(--secondary-color);
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     left: 5px;
     cursor: pointer;
   }
   
   .container_text_map {
-    background-color: var(--primary-color);
+    /* column */
+    background-color: var(--secondary-color);
     color: var(--text-btn-color);
     font-size: 2em;
     padding: 0.3em 1.6em;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     position: relative;
     right: 5px;
     cursor: pointer;
@@ -319,10 +288,37 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
+/* =========================== Ourlove Section ========================== */
+/* ---------------------------------------------------------------------- */
+.foto_icon {
+  width: 80px;
+  height: 80px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.carousel {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 1em;
+}
+
+.cover_img {
+  padding: 0.5em 0.5em 4em 0.5em;
+  background-color: var(--secondary-color);
+}
+
+.img_carousel {
+  width: 100%;
+  max-width: 340px;
+}
+
+/* ---------------------------------------------------------------------- */
 /* ======================= @MEIDAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
 
 @media (max-width: 483px) {
+
   /* ============================ HEAD Section ============================ */
   .recuadro {
     padding: 1.5em 1em;
@@ -351,11 +347,12 @@ h3 {
 
   /* =========================== Places Section =========================== */
   .container_card_places {
-    padding: 1em;
+    /* padding: 1em; */
     gap: 1em;
 
     .content_info_places {
       gap: 0.5em;
+
       .img_places {
         width: 80px;
       }
@@ -375,7 +372,7 @@ h3 {
       width: 60px;
       height: 60px;
     }
-    
+
     .container_text_map {
       padding: 0.3em 1.2em;
       font-size: 1.5em;
@@ -387,11 +384,6 @@ h3 {
   }
 }
 
-/* El amor es paciente, es bondadoso. El amor no es envidioso 
-ni jactancioso ni orgulloso. No se comporta con rudeza, 
-no es egoísta, no se enoja fácilmente, no guarda rencor. 
-1 Corintios 13, 4-5*/
-
 @media (max-width: 565px) {
 
   /* ======================== TIME REALIZE Section ======================== */
@@ -402,14 +394,13 @@ no es egoísta, no se enoja fácilmente, no guarda rencor.
 }
 
 
-
-
-
-
-
-
 /* Mobile (horizontal) y dispositivos más grandes */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .img_carousel {
+    width: 100%;
+    max-width: 580px;
+  }
+}
 
 /* Tablets y pantallas pequeñas */
 @media (max-width: 1024px) {}
