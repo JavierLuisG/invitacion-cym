@@ -30,7 +30,7 @@ export const TimeRealize = () => {
   return (
     <div className="flex_column box">
       <div className="title flex_column">
-        <h2>{params.name}</h2>
+        <h2 className="name">{params.name}</h2>
         <p>
           Porque eres especial para nosotros esperamos contar con tu presencia
           el día de nuestra boda.

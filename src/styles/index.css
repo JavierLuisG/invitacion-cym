@@ -140,6 +140,10 @@ h3 {
   /* column */
   gap: 0.5em;
 
+  .name {
+    font-size: 60px;
+  }
+
   & p {
     width: 90%;
     max-width: 600px;
