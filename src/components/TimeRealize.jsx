@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import NumberTime from "./NumberTime";
 import date from "../mocks/date.json";
-import { useParams } from "react-router-dom"
+// import { useParams } from "react-router-dom"
 
 export const TimeRealize = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const params = useParams();
+  // const params = useParams();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -28,13 +28,13 @@ export const TimeRealize = () => {
   }
 
   return (
-    <div className="flex_column box">
+    <div className="container_time_realize flex_column box">
       <div className="title flex_column">
-        <h2 className="name">{params.name}</h2>
+        {/* <h2 className="name">{params.name}</h2>
         <p>
           Porque eres especial para nosotros esperamos contar con tu presencia
-          el día de nuestra boda.
-        </p>
+          el día de nuestra unión.
+        </p> */}
         <h2>¡Te esperamos!</h2>
       </div>
       <div className="bla flex_column">
