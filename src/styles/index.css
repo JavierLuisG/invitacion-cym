@@ -415,7 +415,7 @@ h3 {
 
 .img_flores_grupo {
   position: relative;
-  margin-top: 5em;
+  margin: 5em 0 3em 0;
   z-index: 2;
 
   & img {
@@ -465,7 +465,7 @@ h3 {
 
 .img_onda_delgada1 {
   position: absolute;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   
   & img {
     width: 100vw;
@@ -474,7 +474,7 @@ h3 {
 
 .img_onda_delgada2 {
   position: absolute;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   transform: rotate(180deg);
   
   & img {
