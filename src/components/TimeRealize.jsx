@@ -57,9 +57,6 @@ export const TimeRealize = () => {
         <div className="img_rama_sencilla">
           <img src="/images/img_rama_sencilla.webp" />
         </div>
-        <div className="img_onda_delgada3">
-          <img src="/img_onda_delgada.svg" />
-        </div>
       </div>
     </div>
   );
