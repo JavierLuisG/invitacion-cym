@@ -259,6 +259,11 @@ h3 {
   z-index: 2;
 }
 
+.container_flor_rama {
+  position: relative;
+  width: 100%;
+}
+
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,
 .text_date, .number_date, .hr_vertical_line, .img_aros_contador) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
@@ -376,6 +381,27 @@ h3 {
   }
 }
 
+.img_rama_sencilla {
+  position: absolute;
+  top: -1em;
+  left: -2em;
+  z-index: 1;
+
+  & img {
+    width: 7em;
+  }
+}
+
+.img_flor_unica {
+  position: relative;
+  right: 48%;
+  z-index: 2;
+
+  & img {
+    width: 6em;
+  }
+}
+
 .img_flores_rama {
   position: absolute;
   top: -5.5em;
@@ -449,6 +475,16 @@ h3 {
 .img_onda_delgada2 {
   position: absolute;
   margin-bottom: 1em;
+  transform: rotate(180deg);
+  
+  & img {
+    width: 100vw;
+  }
+}
+
+.img_onda_delgada3 {
+  position: absolute;
+  bottom: 0em;
   transform: rotate(180deg);
   
   & img {
