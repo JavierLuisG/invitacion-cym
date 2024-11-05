@@ -190,11 +190,12 @@ h3 {
   position: relative;
   z-index: 1;
   max-width: 30em;
-  height: 15em;
-  border-radius: 3em;
+  height: 10em;
+  border-radius: 2em;
   background-color: var(--text-btn-color);
   box-shadow: 0px 0px 20px -6px var(--primary-color);
   margin: 1.5em;
+  padding: 1.5em;
 }
 
 .text_guest {
@@ -381,7 +382,8 @@ h3 {
   }
 }
 
-.img_flores_rama {
+/* .img_flores_rama {
+  background-image: url("https://www.fixdate.io/modelo-invitacion/58/img/flores_contador.png");
   position: absolute;
   top: -5em;
   left: -3em;
@@ -390,6 +392,17 @@ h3 {
   & img {
     width: 15em;
   }
+} */
+.img_flores_rama {
+  background-image: url("https://www.fixdate.io/modelo-invitacion/58/img/flores_contador.png");
+  background-size: contain; /* Ajusta el tamaño de la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  width: 15em; /* Establece el ancho del contenedor */
+  height: 15em; /* Ajusta la altura si es necesario */
+  position: absolute;
+  top: -5em;
+  left: -3em;
+  z-index: 2;
 }
 
 .img_onda_desc {
