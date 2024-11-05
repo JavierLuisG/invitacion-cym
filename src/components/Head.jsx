@@ -5,16 +5,15 @@ const Head = () => {
   return (
     <div className="container_head flex_row box">
       <div className="img_flores_top">
-        <img src="https://www.fixdate.io/modelo-invitacion/58/img/flores_Grupo01_B.png" />
+        <img src="/images/img_flores_top.webp" />
       </div>
       <div className="img_rama_top">
-        <img src="https://www.fixdate.io/modelo-invitacion/58/img/flores_Grupo01_A.png" />
+        <img src="/images/img_ramas_top.webp" />
       </div>
       <div className="recuadro flex_column">
         <span className="date">15.02.2025</span>
         <h1 className="names_couple flex_row">
           <span>
-            {/* C & M */}
             Cristian <br />&<br />
             Mariapaz
           </span>

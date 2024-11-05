@@ -7,7 +7,7 @@ const GuestPresentation = () => {
     <div className="container_guest title flex_column">
       <div className="container_position_guest flex_column">
         <div className="img_flores_rama">
-          {/* <img src="https://www.fixdate.io/modelo-invitacion/58/img/flores_contador.png" /> */}
+          <img src="/images/img_flores_ramas.webp" />
         </div>
         <h2>{params.name}</h2>
       </div>
