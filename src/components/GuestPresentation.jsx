@@ -15,6 +15,15 @@ const GuestPresentation = () => {
         Porque eres especial para nosotros esperamos contar con tu presencia el
         día de nuestra unión.
       </p>
+      <div className="img_flores_grupo">
+        <img src="/images/img_flores_grupo.webp" />
+      </div>
+      <div className="img_onda_delgada1">
+        <img src="/img_onda_delgada.svg" />
+      </div>
+      <div className="img_onda_delgada2">
+        <img src="/img_onda_delgada.svg" />
+      </div>
     </div>
   );
 };

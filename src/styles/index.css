@@ -147,7 +147,7 @@ h3 {
     exit 50% exit 90%;
 }
 
-/* _________________________ fin head --scroll _________________________ */
+/* _________________________ final head --scroll _________________________ */
 .recuadro {
   /* column */
   position: relative;
@@ -183,7 +183,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_guest {
   /* column title */
-  min-height: 800px;
+  min-height: 1200px;
   justify-content: end;
 }
 
@@ -213,13 +213,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   /* column box */
-  height: 80vh;
-  min-height: 800px;
-}
-
-.title_time {
-  position: relative;
-  top: -10em;
+  height: 35em;
 }
 
 .container_circle_time {
@@ -232,10 +226,9 @@ h3 {
   width: 15em;
   height: 15em;
   gap: 0.5em;
-  background-color: var(--text-btn-color);
-  box-shadow: 0px 0px 20px -6px var(--primary-color);
   border-radius: 50%;
   position: absolute;
+  z-index: 3;
 }
 
 .card_date {
@@ -267,7 +260,7 @@ h3 {
 }
 
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,
-.text_date, .number_date, .hr_vertical_line) {
+.text_date, .number_date, .hr_vertical_line, .img_aros_contador) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -394,6 +387,37 @@ h3 {
   }
 }
 
+.img_flores_grupo {
+  position: relative;
+  margin-top: 5em;
+  z-index: 2;
+
+  & img {
+    width: 15em;
+  }
+}
+
+.img_par_flores {
+  position: absolute;
+  top: -1.5em;
+  right: -2em;
+  z-index: 4;
+  transform: rotate(30deg);
+  
+  & img {
+    width: 12em;
+  }
+}
+
+.img_aros_contador {
+  position: relative;
+  z-index: 2;
+  
+  & img {
+    width: 18em;
+  }
+}
+
 .img_onda_desc {
   position: absolute;
   z-index: -1;
@@ -408,6 +432,25 @@ h3 {
   top: 340vh;
   z-index: 1;
 
+  & img {
+    width: 100vw;
+  }
+}
+
+.img_onda_delgada1 {
+  position: absolute;
+  margin-bottom: 2em;
+  
+  & img {
+    width: 100vw;
+  }
+}
+
+.img_onda_delgada2 {
+  position: absolute;
+  margin-bottom: 1em;
+  transform: rotate(180deg);
+  
   & img {
     width: 100vw;
   }

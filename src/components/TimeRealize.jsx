@@ -40,12 +40,12 @@ export const TimeRealize = () => {
           <hr aria-orientation="vertical" className="hr_vertical_line" />
           <NumberTime value={timeLeft.seconds} text={date[1].seconds} />
         </div>
-        <img
-          className="img_adorno_time"
-          src="/images/circle_adorno.png"
-          alt="argollas"
-          width={350}
-        />
+        <div className="img_par_flores">
+          <img src="/images/img_par_flores.webp" />
+        </div>
+        <div className="img_aros_contador">
+          <img src="/img_aros_contador.svg" />
+        </div>
         <div className="img_onda_desc">
           <img src="/img_onda_desc.svg" />
         </div>
