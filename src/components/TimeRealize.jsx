@@ -47,7 +47,7 @@ export const TimeRealize = () => {
           width={350}
         />
         <div className="img_onda_desc">
-          <img src="https://www.fixdate.io/modelo-invitacion/58/img/img_ondas02.svg" />
+          <img src="/img_onda_desc.svg" />
         </div>
       </div>
     </div>
