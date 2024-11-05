@@ -8,6 +8,9 @@ import GuestPresentation from "../components/GuestPresentation";
 export const Home = () => {
   return (
     <div className="container_bottom box">
+      {/* <div className="img_onda_asc">
+        <img src="https://www.fixdate.io/modelo-invitacion/58/img/img_ondas04.svg" />
+      </div> */}
       <div className="container_home flex_column">
         <section className="section_home">
           <Head />

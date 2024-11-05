@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import NumberTime from "./NumberTime";
 import date from "../mocks/date.json";
-// import { useParams } from "react-router-dom"
 
 export const TimeRealize = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  // const params = useParams();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -29,15 +27,10 @@ export const TimeRealize = () => {
 
   return (
     <div className="container_time_realize flex_column box">
-      <div className="title flex_column">
-        {/* <h2 className="name">{params.name}</h2>
-        <p>
-          Porque eres especial para nosotros esperamos contar con tu presencia
-          el día de nuestra unión.
-        </p> */}
+      <div className="title_time">
         <h2>¡Te esperamos!</h2>
       </div>
-      <div className="bla flex_column">
+      <div className="container_circle_time flex_column">
         <div className="container_card_time flex_row">
           <NumberTime value={timeLeft.days} text={date[1].days} />
           <hr aria-orientation="vertical" className="hr_vertical_line" />
@@ -53,6 +46,9 @@ export const TimeRealize = () => {
           alt="argollas"
           width={350}
         />
+        <div className="img_onda_desc">
+          <img src="https://www.fixdate.io/modelo-invitacion/58/img/img_ondas02.svg" />
+        </div>
       </div>
     </div>
   );
