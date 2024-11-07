@@ -504,7 +504,7 @@ h3 {
 
 .img_onda_delgada3 {
   position: absolute;
-  bottom: 0em;
+  bottom: 2em;
   
   & img {
     width: 98vw;
@@ -514,7 +514,7 @@ h3 {
 .img_onda_delgada4 {
   position: absolute;
   bottom: 0em;
-  transform: rotate(180deg);
+  transform: rotate(180deg) scaleX(-1);
   
   & img {
     width: 98vw;
