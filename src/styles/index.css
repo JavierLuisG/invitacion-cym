@@ -45,7 +45,7 @@ h3 {
   width: 100%;
   background-color: var(--pale-cream);
   text-align: center;
-  padding: 2em 1em;
+  padding: 2em 0em;
   gap: 1.5em;
 }
 
@@ -151,6 +151,7 @@ h3 {
 .recuadro {
   /* column */
   position: relative;
+  top: 2em;
   z-index: 2;
   width: 800px;
 }
@@ -171,11 +172,6 @@ h3 {
   width: 90%;
   max-width: 800px;
   font-size: 1.3em;
-}
-
-.img_anillos_head {
-  padding-top: 1em;
-  max-width: 220px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -384,7 +380,7 @@ h3 {
 .img_rama_sencilla {
   position: absolute;
   top: -1em;
-  left: -2em;
+  left: -1em;
   z-index: 1;
 
   & img {
@@ -394,7 +390,31 @@ h3 {
 
 .img_flor_unica {
   position: relative;
-  right: 48%;
+  right: 45%;
+  z-index: 2;
+
+  & img {
+    width: 6em;
+  }
+}
+
+.img_rama_sencilla2 {
+  position: absolute;
+  right: 0em;
+  top: -1em;
+  transform: scaleX(-1);
+  z-index: 1;
+
+  & img {
+    width: 7em;
+  }
+}
+
+.img_flor_unica2 {
+  position: absolute;
+  right: 0em;
+  top: 0em;
+  transform: scaleX(-1);
   z-index: 2;
 
   & img {
@@ -449,7 +469,7 @@ h3 {
   z-index: -1;
 
   & img {
-    width: 100vw;
+    width: 98vw;
   }
 }
 
@@ -468,7 +488,7 @@ h3 {
   margin-bottom: 5em;
   
   & img {
-    width: 100vw;
+    width: 98vw;
   }
 }
 
@@ -478,7 +498,26 @@ h3 {
   transform: rotate(180deg);
   
   & img {
-    width: 100vw;
+    width: 98vw;
+  }
+}
+
+.img_onda_delgada3 {
+  position: absolute;
+  bottom: 0em;
+  
+  & img {
+    width: 98vw;
+  }
+}
+
+.img_onda_delgada4 {
+  position: absolute;
+  bottom: 0em;
+  transform: rotate(180deg);
+  
+  & img {
+    width: 98vw;
   }
 }
 
@@ -487,13 +526,14 @@ h3 {
 /* ---------------------------------------------------------------------- */
 
 /* (vertical) */
-@media (max-height: 700px) {
+/* @media (max-height: 700px) { */
+@media (min-aspect-ratio: 19/10) {
   :is(
-    /* .container_head, 
-    .container_guest,
-    .container_position_guest,
-    .container_time_realize,
-    .container_card_time */
+    .container_head, 
+    /* .container_guest, */
+    /* .container_position_guest, */
+    /* .container_time_realize, */
+    /* .container_card_time */
     ) {
     font-size: clamp(0.6rem, 0.6vw + 0.6rem, 7rem);
   }
