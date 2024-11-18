@@ -23,6 +23,9 @@ const GuestPresentation = () => {
       <div className="img_onda_delgada2">
         <img src="/img_onda_delgada.svg" />
       </div>
+      <div className="img_curvas_doble_derecha">
+        <img src="/img_curvas_doble_derecha.svg" />
+      </div>
     </div>
   );
 };

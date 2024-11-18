@@ -87,8 +87,8 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  height: 100vh;
-  min-height: 750px;
+  height: 90vh;
+  min-height: 700px;
   position: relative;
 }
 
@@ -161,8 +161,9 @@ h3 {
 .container_guest {
   /* column title */
   height: 100vh;
-  min-height: 700px;
+  min-height: 800px;
   position: relative;
+  background-image: url("/images/fondo.webp");
 }
 
 .container_position_guest {
@@ -490,6 +491,17 @@ h3 {
   }
 }
 
+.img_curvas_doble_derecha {
+  
+  & img {
+    position: absolute;
+    z-index: 2;
+    bottom: -2em;
+    left: 0;
+    transform: scaleX(-1);
+  }
+}
+
 .img_aros_contador {
   position: relative;
   z-index: 2;
@@ -564,11 +576,7 @@ h3 {
 /* @media (max-height: 700px) { */
 @media (min-aspect-ratio: 19/10) {
   :is(
-    .container_head, 
-    /* .container_guest, */
-    /* .container_position_guest, */
-    /* .container_time_realize, */
-    /* .container_card_time */
+    .container_head
     ) {
     font-size: clamp(0.6rem, 0.6vw + 0.6rem, 7rem);
   }
