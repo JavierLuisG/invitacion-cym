@@ -9,15 +9,11 @@ export const Home = () => {
   return (
     <div className="container_bottom box">
       <div className="container_home flex_column">
-        <section className="section_home">
-          <Head />
-        </section>
-        <section className="section_home">
-          <GuestPresentation />
-          <TimeRealize />
-          <Places />
-          <OurLove />
-        </section>
+        <GuestPresentation />
+        <Head />
+        <TimeRealize />
+        <Places />
+        <OurLove />
       </div>
     </div>
   );
