@@ -286,7 +286,21 @@ h3 {
   .info_places {
     /* column */
     align-items: start;
-    gap: 0.2em;
+    gap: 1em;
+
+    .section_info_places {
+      width: 100%;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .info_places_title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
   }
 }
 
@@ -323,14 +337,24 @@ h3 {
   /* row */
   border: none;
   background-color: var(--secondary-color);
-  padding: 0.5em 2.5em;
+  /* padding: 0.5em 2.5em; */
+  padding: 0.5em 6em;
   border-radius: 30px;
   gap: 1em;
+  cursor: pointer;
 
   .text_map_card {
     color: var(--text-btn-color);
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-right: 0.5em;
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+
+  &:active {
+    background-color: var(--secondary-color);
   }
 
   .map_icon {
@@ -586,7 +610,7 @@ h3 {
   .container_places {
     /* row box */
     flex-direction: column;
-    gap: 3em;
+    gap: 5em;
   }
 
   .img_rama_sencilla {
@@ -612,7 +636,7 @@ h3 {
   .img_rama_sencilla2 {
     position: absolute;
     right: 0em;
-    top: 23em;
+    top: 30em;
     transform: scaleX(-1);
     z-index: 1;
   
@@ -624,7 +648,7 @@ h3 {
   .img_flor_unica2 {
     position: absolute;
     right: 0em;
-    top: 24em;
+    top: 31em;
     transform: scaleX(-1);
     z-index: 2;
   
