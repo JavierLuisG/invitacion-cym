@@ -13,21 +13,22 @@ const GuestPresentation = () => {
           <div className="flex_column container_name">
             <h2>{params.name}</h2>
           </div>
-          <div className="cinta_guest flex_row">
-            <div className="img_cinta_guest1">
-              <img src="/img_cinta3.svg" />
-            </div>
-            <h3 className="text_cinta">Te invitamos</h3>
-            <div className="img_cinta_guest2">
-              <img src="/img_cinta4.svg" />
-            </div>
-          </div>
         </div>
         <div className="img_onda_delgada1">
           <img src="/img_onda_delgada.svg" />
         </div>
         <div className="img_onda_delgada2">
           <img src="/img_onda_delgada.svg" />
+        </div>
+
+        <div className="cinta_guest flex_row">
+          <div className="img_cinta_guest1">
+            <img src="/img_cinta3.svg" />
+          </div>
+          <h3 className="text_cinta">Te invitamos</h3>
+          <div className="img_cinta_guest2">
+            <img src="/img_cinta4.svg" />
+          </div>
         </div>
       </div>
       <img

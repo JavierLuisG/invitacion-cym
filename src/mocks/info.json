@@ -1,18 +1,18 @@
 [
     {
         "title": "Ceremonia",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero" },
-        "hour": { "title": "Hora", "info": "15:00 hrs" },
-        "place": { "title": "Lugar", "info": "Parroquia La Asunción" },
-        "address": { "title": "Dirección", "info": "Barrio el Polo" },
+        "date": { "title": "Día", "info": "Sábado 15 de febrero." },
+        "hour": { "title": "Hora", "info": "15:00 hrs." },
+        "place": { "title": "Lugar", "info": "Parroquia la Asunción de Nuestra Señora." },
+        "address": { "title": "Dirección", "info": "Calle 79 # 28a - 46" },
         "image": "/icon-church.svg"
     },
     {
         "title": "Recepción",
-        "date": { "title": "Día", "info": "Sábado 15 de febrero" },
-        "hour": { "title": "Hora", "info": "19:00 hrs" },
-        "place": { "title": "Lugar", "info": "Condominio el Condado" },
-        "address": { "title": "Dirección", "info": "Calle Condado" },
+        "date": { "title": "Día", "info": "Sábado 15 de febrero." },
+        "hour": { "title": "Hora", "info": "19:00 hrs." },
+        "place": { "title": "Lugar", "info": "Salón social Frutos del Mar." },
+        "address": { "title": "Dirección", "info": "Calle 152 #103c-16" },
         "image": "/drink-glasses.svg"
     }
 ]

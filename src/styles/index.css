@@ -1,12 +1,14 @@
 :root {
-  --primary-color: #203500;
-  --secondary-color: #445a18;
+  /* --primary-color: #203500;
+  --secondary-color: #445a18; */
+  --primary-color: #445a18;
+  --secondary-color: #203500;
   --third-color: #1e3d2e;
   --bg-opacity: #25463679;
   --pale-cream: #f5f5f5;
 
   --text-primary: #203500;
-  --text-btn-color: white;
+  --text-btn-color: #ffffff;
 }
 
 /* =========================== GENERAL STYLES =========================== */
@@ -45,7 +47,7 @@ h3 {
   width: 100%;
   background-color: var(--pale-cream);
   text-align: center;
-  padding: 2em 0em;
+  padding: 7em 0em 5em 0em;
   gap: 1.5em;
 }
 
@@ -79,7 +81,6 @@ h3 {
 .container_home {
   /* column */
   background-color: var(--pale-cream);
-
 }
 
 /* ---------------------------------------------------------------------- */
@@ -87,8 +88,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  height: 90vh;
-  min-height: 700px;
+  padding-top: 9em;
   position: relative;
 }
 
@@ -160,10 +160,10 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_guest {
   /* column title */
-  height: 100vh;
-  min-height: 800px;
+  height: 95vh;
+  min-height: 550px;
   position: relative;
-  background-image: url("/images/fondo.webp");
+  /* background-image: url("/images/fondo.webp"); */
 }
 
 .container_position_guest {
@@ -193,6 +193,43 @@ h3 {
   padding: 0 2em;
 }
 
+.cinta_guest {
+  max-width: 300px;
+  width: 80%;
+  position: absolute;
+  z-index: 2;
+  bottom: -1em;
+}
+
+.text_cinta {
+  width: 100%;
+  background-color: var(--pale-cream);
+  color: var(--primary-color);
+  /* background-color: var(--primary-color);
+  color: var(--text-btn-color); */
+  border: 1px solid var(--secondary-color);
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 0.1em 0em;
+  text-align: center;
+}
+
+.img_cinta_guest1 {
+  margin-top: 0.2em;
+
+  & img {
+    width: 0.59em;
+  }
+}
+
+.img_cinta_guest2 {
+  margin-top: 0.2em;
+
+  & img {
+    width: 0.63em;
+  }
+}
+
 :is(.container_guest, .container_position_guest, .text_guest) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
@@ -200,6 +237,10 @@ h3 {
 /* ---------------------------------------------------------------------- */
 /* ======================== TIME REALIZE Section ======================== */
 /* ---------------------------------------------------------------------- */
+.container_time_realize {
+  position: relative;
+}
+
 .container_circle_time {
   position: relative;
   z-index: 2;
@@ -216,13 +257,14 @@ h3 {
 }
 
 .card_date {
+
   /* column */
   .number_date {
     font-size: 2em;
     font-weight: bolder;
     margin-bottom: 5px;
   }
-  
+
   .text_date {
     font-size: 1.2em;
     font-weight: bolder;
@@ -249,8 +291,15 @@ h3 {
   width: 100%;
 }
 
+.img_anillos_reales {
+  position: absolute;
+  bottom: -2em;
+  z-index: 2;
+  width: 15em;
+}
+
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,
-.text_date, .number_date, .hr_vertical_line, .img_aros_contador) {
+  .text_date, .number_date, .hr_vertical_line, .img_aros_contador) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -307,12 +356,11 @@ h3 {
 .cinta_container {
   max-width: 500px;
   width: 100%;
-
 }
 
 .info_title {
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--text-btn-color);
   font-weight: lighter;
   padding: 0.1em 0em;
@@ -321,6 +369,7 @@ h3 {
 
 .img_cinta1 {
   margin-top: 0.2em;
+
   & img {
     width: 0.73em;
   }
@@ -328,6 +377,7 @@ h3 {
 
 .img_cinta2 {
   margin-top: 0.2em;
+
   & img {
     width: 0.77em;
   }
@@ -336,8 +386,7 @@ h3 {
 .btn_card_places {
   /* row */
   border: none;
-  background-color: var(--secondary-color);
-  /* padding: 0.5em 2.5em; */
+  background-color: var(--primary-color);
   padding: 0.5em 6em;
   border-radius: 30px;
   gap: 1em;
@@ -427,8 +476,7 @@ h3 {
 
 .img_rama_sencilla {
   position: absolute;
-  top: -1em;
-  left: -1em;
+  top: 4em;
   z-index: 1;
 
   & img {
@@ -438,6 +486,7 @@ h3 {
 
 .img_flor_unica {
   position: relative;
+  top: 5em;
   z-index: 2;
 
   & img {
@@ -448,7 +497,7 @@ h3 {
 .img_rama_sencilla2 {
   position: absolute;
   right: 0em;
-  top: -1em;
+  top: 4em;
   transform: scaleX(-1);
   z-index: 1;
 
@@ -460,7 +509,7 @@ h3 {
 .img_flor_unica2 {
   position: absolute;
   right: 0em;
-  top: 0em;
+  top: 5em;
   transform: scaleX(-1);
   z-index: 2;
 
@@ -509,27 +558,20 @@ h3 {
   right: -2em;
   z-index: 4;
   transform: rotate(30deg);
-  
+
   & img {
     width: 12em;
   }
 }
 
 .img_curvas_doble_derecha {
-  
-  & img {
-    position: absolute;
-    z-index: 2;
-    bottom: -2em;
-    left: 0;
-    transform: scaleX(-1);
-  }
+  transform: scaleX(-1);
 }
 
 .img_aros_contador {
   position: relative;
   z-index: 2;
-  
+
   & img {
     width: 18em;
   }
@@ -557,7 +599,7 @@ h3 {
 .img_onda_delgada1 {
   position: absolute;
   margin-bottom: 6em;
-  
+
   & img {
     width: 98vw;
   }
@@ -567,7 +609,7 @@ h3 {
   position: absolute;
   margin-bottom: 2em;
   transform: rotate(180deg);
-  
+
   & img {
     width: 98vw;
   }
@@ -575,8 +617,8 @@ h3 {
 
 .img_onda_delgada3 {
   position: absolute;
-  bottom: 2em;
-  
+  bottom: -4em;
+
   & img {
     width: 98vw;
   }
@@ -584,9 +626,9 @@ h3 {
 
 .img_onda_delgada4 {
   position: absolute;
-  bottom: 0em;
+  bottom: -6em;
   transform: rotate(180deg) scaleX(-1);
-  
+
   & img {
     width: 98vw;
   }
@@ -596,15 +638,13 @@ h3 {
 /* ======================= @MEIDAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
 
-/* (vertical) */
-/* @media (max-height: 700px) { */
-@media (min-aspect-ratio: 19/10) {
+/* @media (min-aspect-ratio: 19/10) {
   :is(
     .container_head
     ) {
     font-size: clamp(0.6rem, 0.6vw + 0.6rem, 7rem);
   }
-}
+} */
 
 @media (max-width: 1200px) {
   .container_places {
@@ -615,52 +655,51 @@ h3 {
 
   .img_rama_sencilla {
     position: absolute;
-    top: -1em;
-    left: -1em;
+    top: 4em;
     z-index: 1;
-  
+
     & img {
       width: 7em;
     }
   }
-  
+
   .img_flor_unica {
     position: relative;
     z-index: 2;
-  
+
     & img {
       width: 6em;
     }
   }
-  
+
   .img_rama_sencilla2 {
     position: absolute;
     right: 0em;
-    top: 30em;
+    top: 35em;
     transform: scaleX(-1);
     z-index: 1;
-  
+
     & img {
       width: 7em;
     }
   }
-  
+
   .img_flor_unica2 {
     position: absolute;
     right: 0em;
-    top: 31em;
+    top: 36em;
     transform: scaleX(-1);
     z-index: 2;
-  
+
     & img {
       width: 6em;
     }
   }
-  
+
   .img_onda_delgada3 {
     display: none;
   }
-  
+
   .img_onda_delgada4 {
     display: none;
   }

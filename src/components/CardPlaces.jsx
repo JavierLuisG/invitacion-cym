@@ -39,7 +39,7 @@ const CardPlaces = ({ info }) => {
           </div>
           <div className="section_info_places">
             <p className="info_places_title">{info.address.title}</p>
-            <p>{info.place.info}</p>
+            <p>{info.address.info}</p>
           </div>
         </div>
       </div>
