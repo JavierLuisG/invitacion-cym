@@ -16,7 +16,7 @@ const GuestPresentation = () => {
           <div className="img_cinta_guest1">
             <img src="/img_cinta3.svg" />
           </div>
-          <h3 className="text_cinta">Te invitamos</h3>
+          <h3 className="text_cinta">Te Invitamos</h3>
           <div className="img_cinta_guest2">
             <img src="/img_cinta4.svg" />
           </div>

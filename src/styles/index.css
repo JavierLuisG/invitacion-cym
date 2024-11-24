@@ -245,6 +245,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   position: relative;
+  padding-bottom: 1em;
 }
 
 .container_circle_time {
@@ -299,9 +300,9 @@ h3 {
 
 .img_anillos_reales {
   position: absolute;
-  bottom: -4em;
+  bottom: 2.7em;
   z-index: 2;
-  width: 8em;
+  width: 3.5em;
   transform: rotate(130deg);
 }
 
@@ -698,10 +699,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    display: none;
+    bottom: 4em;
   }
 
   .img_onda_delgada4 {
-    display: none;
+    bottom: 3.8 em;
+    transform: rotate(180deg);
   }
 }
