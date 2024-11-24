@@ -299,9 +299,10 @@ h3 {
 
 .img_anillos_reales {
   position: absolute;
-  bottom: -2em;
+  bottom: -4em;
   z-index: 2;
-  width: 15em;
+  width: 8em;
+  transform: rotate(130deg);
 }
 
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,

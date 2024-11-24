@@ -51,8 +51,9 @@ export const TimeRealize = () => {
         </div>
       </div>
       <img
+        // className="img_anillos_reales"
         className="img_anillos_reales"
-        src="/images/anillos-reales-sin-fondo.png"
+        src="/images/anillo-de-bodas.png"
       />
     </div>
   );

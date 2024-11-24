@@ -13,7 +13,7 @@ export const Home = () => {
         <Head />
         <TimeRealize />
         <Places />
-        {/* <OurLove /> */}
+        <OurLove />
       </div>
     </div>
   );
