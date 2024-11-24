@@ -674,8 +674,7 @@ h3 {
 
   .img_rama_sencilla2 {
     position: absolute;
-    right: 0em;
-    top: 35em;
+    top: 37em;
     transform: scaleX(-1);
     z-index: 1;
 
@@ -686,8 +685,7 @@ h3 {
 
   .img_flor_unica2 {
     position: absolute;
-    right: 0em;
-    top: 36em;
+    top: 38em;
     transform: scaleX(-1);
     z-index: 2;
 

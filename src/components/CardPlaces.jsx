@@ -36,6 +36,7 @@ const CardPlaces = ({ info }) => {
           <div className="section_info_places">
             <p className="info_places_title">{info.place.title}</p>
             <p>{info.place.info}</p>
+            <p>{info.place2.info}</p>
           </div>
           <div className="section_info_places">
             <p className="info_places_title">{info.address.title}</p>
