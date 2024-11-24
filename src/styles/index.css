@@ -160,7 +160,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_guest {
   /* column title */
-  height: 95vh;
+  height: 100vh;
   /* min-height: 550px; */
   position: relative;
   /* background-image: url("/images/fondo.webp"); */
@@ -231,7 +231,9 @@ h3 {
 }
 
 .img_curvas_doble_derecha {
+  position: absolute;
   transform: scaleX(-1);
+  bottom: 0;
 }
 
 :is(.container_guest, .container_position_guest, .text_guest) {
