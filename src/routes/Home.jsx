@@ -4,6 +4,7 @@ import { TimeRealize } from "../components/TimeRealize";
 import Places from "../components/Places";
 import OurLove from "../components/OurLove";
 import GuestPresentation from "../components/GuestPresentation";
+import SectionDetail from "../components/SectionDetail";
 
 export const Home = () => {
   return (
@@ -13,7 +14,8 @@ export const Home = () => {
         <Head />
         <TimeRealize />
         <Places />
-        <OurLove />
+        <SectionDetail />
+        {/* <OurLove /> */}
       </div>
     </div>
   );

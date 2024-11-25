@@ -172,7 +172,7 @@ h3 {
   width: 70%;
   max-width: 20em;
   height: 10em;
-  background-color: var(--pale-cream);
+  background-color: var(--text-btn-color);
   box-shadow: 0px 0px 20px -6px var(--secondary-color);
   border-radius: 0.4em;
   margin: 1.5em;
@@ -203,7 +203,7 @@ h3 {
 
 .text_cinta {
   width: 100%;
-  background-color: var(--pale-cream);
+  background-color: var(--text-btn-color);
   color: var(--primary-color);
   /* background-color: var(--primary-color);
   color: var(--text-btn-color); */
@@ -420,6 +420,101 @@ h3 {
 }
 
 :is(.container_places, .container_card_places, .btn_card_places) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+/* ---------------------------------------------------------------------- */
+/* =========================== Detail Section =========================== */
+/* ---------------------------------------------------------------------- */
+.container_section_detail {
+  position: relative;
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.suit_container {
+  height: 100%;
+  justify-content: end;
+}
+
+.img_suit {
+  width: 5.5em;
+}
+
+.title_dress_code {
+  text-align: center;
+  font-weight: bold;
+}
+
+.hr_heart {
+  position: relative;
+  height: 130px;
+}
+
+.hr_line_detail_heart {
+  width: 2px;
+  height: 80%;
+  margin: 1em 0em;
+  border: none;
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: calc(50% - 1px);
+}
+
+.flor_detail {
+  position: absolute;
+  top: 2em;
+  transform: rotate(-90deg);
+  left: -9%;
+  top: -1em;
+  z-index: 5;
+
+  & img {
+    width: 25vw;
+  }
+}
+
+.rama_detail {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -9%;
+  top: -1em;
+  z-index: 4;
+
+  & img {
+    width: 35vw;
+  }
+}
+
+.img_curvas_doble_derecha_detail {
+  position: absolute;
+  z-index: 0;
+  top: 0em;
+}
+
+.img_onda_delgada_detail1 {
+  position: absolute;
+  top: 2em;
+  transform: scaleX(-1);
+
+  & img {
+    width: 98vw;
+  }
+}
+
+.img_onda_delgada_detail2 {
+  position: absolute;
+  top: 2em;
+  transform: rotate(180deg);
+
+  & img {
+    width: 98vw;
+  }
+}
+
+:is(.container_section_detail, .title_detail) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -649,6 +744,17 @@ h3 {
     font-size: clamp(0.6rem, 0.6vw + 0.6rem, 7rem);
   }
 } */
+@media (min-width: 730px) {
+  .container_section_detail {
+    padding-top: 9em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container_section_detail {
+    padding-top: 13em;
+  }
+}
 
 @media (max-width: 1200px) {
   .container_places {
