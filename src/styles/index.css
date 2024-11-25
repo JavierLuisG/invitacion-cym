@@ -9,6 +9,8 @@
 
   --text-primary: #203500;
   --text-btn-color: #ffffff;
+
+  --bg-guest: #ddebc2;
 }
 
 /* =========================== GENERAL STYLES =========================== */
@@ -163,6 +165,7 @@ h3 {
   height: 100vh;
   /* min-height: 550px; */
   position: relative;
+  background-color: var(--bg-guest);
   /* background-image: url("/images/fondo.webp"); */
 }
 
@@ -472,7 +475,7 @@ h3 {
   z-index: 5;
 
   & img {
-    width: 25vw;
+    width: 28vw;
   }
 }
 
@@ -484,7 +487,7 @@ h3 {
   z-index: 4;
 
   & img {
-    width: 35vw;
+    width: 38vw;
   }
 }
 
@@ -496,7 +499,7 @@ h3 {
 
 .img_onda_delgada_detail1 {
   position: absolute;
-  top: 2em;
+  top: 1em;
   transform: scaleX(-1);
 
   & img {
@@ -506,7 +509,7 @@ h3 {
 
 .img_onda_delgada_detail2 {
   position: absolute;
-  top: 2em;
+  top: 1em;
   transform: rotate(180deg);
 
   & img {
