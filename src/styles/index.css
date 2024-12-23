@@ -383,6 +383,10 @@ h3 {
     align-items: start;
     gap: 1em;
 
+    & a {
+      width: 100%;
+    }
+
     .section_info_places {
       width: 100%;
     }
@@ -431,6 +435,7 @@ h3 {
 
 .btn_card_places {
   /* row */
+  width: 100%;
   border: none;
   background-color: var(--primary-color);
   padding: 0.5em 6em;
