@@ -4,19 +4,7 @@ const Head = () => {
   const params = useParams();
   return (
     <div className="container_head flex_row box">
-      {/* <div className="img_flores_top">
-        <img src="/images/img_flores_top.webp" />
-      </div> */}
-      {/* <div className="img_rama_top">
-        <img src="/images/img_ramas_top.webp" />
-      </div> */}
       <div className="recuadro flex_column">
-        <div className="img_flores_grupo1">
-          <img src="/images/img_flores_grupo.webp" />
-        </div>
-        <div className="img_flores_grupo2">
-          <img src="/images/img_flores_grupo.webp" />
-        </div>
         <div className="date_hr">
           <hr aria-orientation="horizontal" className="hr_line line_position" />
           <span className="date">15.02.2025</span>

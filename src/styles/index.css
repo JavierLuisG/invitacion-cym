@@ -1,6 +1,4 @@
 :root {
-  /* --primary-color: #203500;
-  --secondary-color: #445a18; */
   --primary-color: #445a18;
   --secondary-color: #203500;
   --third-color: #1e3d2e;
@@ -163,17 +161,27 @@ h3 {
 .container_guest {
   /* column title */
   height: 100vh;
-  /* min-height: 550px; */
   position: relative;
-  background-color: var(--bg-guest);
-  /* background-image: url("/images/fondo.webp"); */
+  background-image: url("/images/oliva_fondo.webp");
+}
+
+.fondo_pareja {
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card_presentation {
+  position: relative;
 }
 
 .container_position_guest {
   position: relative;
   z-index: 1;
-  width: 70%;
-  max-width: 20em;
+  width: 100%;
+  max-width: 18em;
   height: 10em;
   background-color: var(--text-btn-color);
   box-shadow: 0px 0px 20px -6px var(--secondary-color);
@@ -208,13 +216,23 @@ h3 {
   width: 100%;
   background-color: var(--text-btn-color);
   color: var(--primary-color);
-  /* background-color: var(--primary-color);
-  color: var(--text-btn-color); */
   border: 1px solid var(--secondary-color);
   font-weight: lighter;
   font-size: 1.5em;
   padding: 0.1em 0em;
   text-align: center;
+}
+
+.img_oliva_grupo_ramas_guest {
+  position: absolute;
+  top: -4em;
+  left: -6em;
+  z-index: 0;
+  transform: rotate(-30deg);
+
+  & img {
+    width: 14em;
+  }
 }
 
 .img_cinta_guest1 {
@@ -239,7 +257,7 @@ h3 {
   bottom: 0;
 }
 
-:is(.container_guest, .container_position_guest, .text_guest) {
+:is(.card_presentation, .container_guest, .container_position_guest, .text_guest) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -264,6 +282,16 @@ h3 {
   border-radius: 50%;
   position: absolute;
   z-index: 3;
+  left: 3em;
+}
+
+.oliva_contador_redondo_timerealize {
+  position: relative;
+  z-index: 2;
+
+  & img {
+    width: 20em;
+  }
 }
 
 .card_date {
@@ -289,24 +317,31 @@ h3 {
   background-color: var(--bg-opacity);
 }
 
-.img_adorno_time {
+.img_onda_desc_time_realize {
   position: absolute;
-  width: 19em;
-  z-index: 2;
+  z-index: -1;
+
+  & img {
+    width: 98vw;
+  }
 }
 
-.container_flor_rama {
+.img_anillos_timerealize {
   position: absolute;
-  top: 0em;
-  width: 100%;
-}
-
-.img_anillos_reales {
-  position: absolute;
-  bottom: 2.7em;
+  bottom: 3.5em;
+  left: 9em;
   z-index: 2;
   width: 3.5em;
   transform: rotate(130deg);
+}
+
+.img_onda_desc_timerealize {
+  position: absolute;
+  z-index: -1;
+
+  & img {
+    width: 98vw;
+  }
 }
 
 :is(.container_time_realize, .container_card_time, .hr_vertical_line,
@@ -422,7 +457,69 @@ h3 {
   }
 }
 
-:is(.container_places, .container_card_places, .btn_card_places) {
+.container_flor_ramas_places {
+  position: absolute;
+  top: 0em;
+  width: 100%;
+}
+
+.img_rama_hortensia_places {
+  position: absolute;
+  top: 5.5em;
+  z-index: 1;
+  left: -2em;
+  transform: rotate(-40deg);
+
+  & img {
+    width: 14em;
+  }
+}
+
+.img_rama_hortensia_2_places {
+  position: absolute;
+  top: 2.5em;
+  z-index: 1;
+  left: -2em;
+  transform: rotate(40deg) scaleY(-1);
+
+  & img {
+    width: 14em;
+  }
+}
+
+.img_hortensia_places {
+  position: relative;
+  top: 3.5em;
+  right: 2em;
+  z-index: 2;
+
+  & img {
+    width: 9em;
+  }
+}
+
+.img_onda_delgada3 {
+  position: absolute;
+  bottom: -1em;
+  right: 10px;
+
+  & img {
+    width: 98vw;
+  }
+}
+
+.img_onda_delgada4 {
+  position: absolute;
+  bottom: -2em;
+  transform: rotate(180deg) scaleX(-1);
+  right: 10px;        
+
+  & img {
+    width: 98vw;
+  }
+}
+
+:is(.container_places, .container_card_places, .btn_card_places, .img_hortensia_places, .img_rama_hortensia_places, .img_rama_hortensia_2_places) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -438,17 +535,29 @@ h3 {
 }
 
 .suit_container {
+  position: relative;
   height: 100%;
   justify-content: end;
 }
 
-.img_suit {
-  width: 5.5em;
+.img_suit_man {
+  position: absolute;
+  right: 0;
+  bottom: -4.5em;
+  width: 4.2em;
+}
+
+.img_suit_girl {
+  position: absolute;
+  left: 0;
+  bottom: -4.5em;
+  width: 4.2em;
 }
 
 .title_dress_code {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 1em;
 }
 
 .hr_heart {
@@ -466,28 +575,15 @@ h3 {
   left: calc(50% - 1px);
 }
 
-.flor_detail {
-  position: absolute;
-  top: 2em;
-  transform: rotate(-90deg);
-  left: -9%;
-  top: -1em;
-  z-index: 5;
-
-  & img {
-    width: 28vw;
-  }
-}
-
 .rama_detail {
   position: absolute;
   transform: rotate(-90deg);
-  left: -9%;
-  top: -1em;
+  left: -6em;
+  top: -2em;
   z-index: 4;
 
   & img {
-    width: 38vw;
+    width: 17em;
   }
 }
 
@@ -558,195 +654,9 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
-/* =========================== IMAGES POSITION ========================== */
-/* ---------------------------------------------------------------------- */
-.img_flores_top {
-  position: absolute;
-  top: -65px;
-  z-index: 2;
-
-  & img {
-    width: 17em;
-  }
-}
-
-.img_rama_top {
-  position: absolute;
-  top: -65px;
-  z-index: 1;
-
-  & img {
-    width: 24em;
-  }
-}
-
-.img_rama_sencilla {
-  position: absolute;
-  top: 4em;
-  z-index: 1;
-
-  & img {
-    width: 7em;
-  }
-}
-
-.img_flor_unica {
-  position: relative;
-  top: 5em;
-  z-index: 2;
-
-  & img {
-    width: 6em;
-  }
-}
-
-.img_rama_sencilla2 {
-  position: absolute;
-  right: 0em;
-  top: 4em;
-  transform: scaleX(-1);
-  z-index: 1;
-
-  & img {
-    width: 7em;
-  }
-}
-
-.img_flor_unica2 {
-  position: absolute;
-  right: 0em;
-  top: 5em;
-  transform: scaleX(-1);
-  z-index: 2;
-
-  & img {
-    width: 6em;
-  }
-}
-
-.img_flores_rama {
-  position: absolute;
-  top: -5.5em;
-  left: -4.2em;
-  z-index: 2;
-
-  & img {
-    width: 14em;
-  }
-}
-
-.img_flores_grupo1 {
-  position: absolute;
-  margin: 5em 0 3em 0;
-  z-index: 2;
-  top: -13em;
-
-  & img {
-    width: 15em;
-  }
-}
-
-.img_flores_grupo2 {
-  position: absolute;
-  margin: 5em 0 3em 0;
-  z-index: 2;
-  bottom: -11em;
-  transform: rotate(180deg);
-
-  & img {
-    width: 15em;
-  }
-}
-
-.img_par_flores {
-  position: absolute;
-  top: -1.5em;
-  right: -2em;
-  z-index: 4;
-  transform: rotate(30deg);
-
-  & img {
-    width: 12em;
-  }
-}
-
-.img_aros_contador {
-  position: relative;
-  z-index: 2;
-
-  & img {
-    width: 18em;
-  }
-}
-
-.img_onda_desc {
-  position: absolute;
-  z-index: -1;
-
-  & img {
-    width: 98vw;
-  }
-}
-
-.img_onda_asc {
-  position: relative;
-  top: 340vh;
-  z-index: 1;
-
-  & img {
-    width: 100vw;
-  }
-}
-
-.img_onda_delgada1 {
-  position: absolute;
-  margin-bottom: 6em;
-
-  & img {
-    width: 98vw;
-  }
-}
-
-.img_onda_delgada2 {
-  position: absolute;
-  margin-bottom: 2em;
-  transform: rotate(180deg);
-
-  & img {
-    width: 98vw;
-  }
-}
-
-.img_onda_delgada3 {
-  position: absolute;
-  bottom: -4em;
-
-  & img {
-    width: 98vw;
-  }
-}
-
-.img_onda_delgada4 {
-  position: absolute;
-  bottom: -6em;
-  transform: rotate(180deg) scaleX(-1);
-
-  & img {
-    width: 98vw;
-  }
-}
-
-/* ---------------------------------------------------------------------- */
-/* ======================= @MEIDAS QUERIES Section ====================== */
+/* ======================= @MEDIAS QUERIES Section ====================== */
 /* ---------------------------------------------------------------------- */
 
-/* @media (min-aspect-ratio: 19/10) {
-  :is(
-    .container_head
-    ) {
-    font-size: clamp(0.6rem, 0.6vw + 0.6rem, 7rem);
-  }
-} */
 @media (min-width: 730px) {
   .container_section_detail {
     padding-top: 9em;
@@ -766,53 +676,12 @@ h3 {
     gap: 5em;
   }
 
-  .img_rama_sencilla {
-    position: absolute;
-    top: 4em;
-    z-index: 1;
-
-    & img {
-      width: 7em;
-    }
-  }
-
-  .img_flor_unica {
-    position: relative;
-    z-index: 2;
-
-    & img {
-      width: 6em;
-    }
-  }
-
-  .img_rama_sencilla2 {
-    position: absolute;
-    top: 37em;
-    transform: scaleX(-1);
-    z-index: 1;
-
-    & img {
-      width: 7em;
-    }
-  }
-
-  .img_flor_unica2 {
-    position: absolute;
-    top: 38em;
-    transform: scaleX(-1);
-    z-index: 2;
-
-    & img {
-      width: 6em;
-    }
-  }
-
-  .img_onda_delgada3 {
+  /* .img_onda_delgada3 {
     bottom: 4em;
   }
 
   .img_onda_delgada4 {
     bottom: 3.8em;
     transform: rotate(180deg);
-  }
+  } */
 }

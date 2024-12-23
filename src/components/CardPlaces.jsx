@@ -1,5 +1,4 @@
-import { Link, useParams } from "react-router-dom";
-// import { routes } from "../utils/routes";
+import { Link } from "react-router-dom";
 import infoPlaces from "../mocks/info.json";
 import { useState } from "react";
 
@@ -46,13 +45,11 @@ const CardPlaces = ({ info }) => {
       </div>
       <Link
         to={`https://www.google.com/maps/dir/?api=1&destination=${destino}`}
-        // to={`${routes.map}/${lugar}`}
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
       >
         <button className="btn_card_places flex_row">
-          {/* <img className="map_icon" src="/map-movible.svg" /> */}
           <div className="text_map_card">Ver mapa</div>
         </button>
       </Link>

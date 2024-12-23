@@ -3,11 +3,8 @@ import React from "react";
 const SectionDetail = () => {
   return (
     <div className="container_section_detail flex_column box">
-      <div className="flor_detail">
-        <img src="/images/img_flores_top.webp" />
-      </div>
       <div className="rama_detail">
-        <img src="/images/img_ramas_top.webp" />
+        <img src="/images/oliva_rama_dos_par.webp" />
       </div>
       <img
         className="img_curvas_doble_derecha_detail"
@@ -19,13 +16,12 @@ const SectionDetail = () => {
       <div className="img_onda_delgada_detail2">
         <img src="/img_onda_delgada.svg" />
       </div>
-      
       <div className="title_detail">
         <h2>Detalles</h2>
       </div>
       <div className="container_dress_code flex_row">
         <div className="suit_container flex_column">
-          <img className="img_suit" src="/img_suit_man.svg" alt="" />
+          <img className="img_suit_man" src="/img_suit_man.svg" alt="" />
         </div>
         <div className="flex_column">
           <div className="title_dress_code">
@@ -38,7 +34,7 @@ const SectionDetail = () => {
           </div>
         </div>
         <div className="suit_container flex_column">
-          <img className="img_suit" src="/img_suit_man.svg" alt="" />
+          <img className="img_suit_girl" src="/img_suit_girl.svg" alt="" />
         </div>
       </div>
       <div className="flex_column">

@@ -2,8 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import { routes } from "./utils/routes";
 import { Home } from "./routes/Home";
 import NotFound from "./routes/NotFound";
-// import MapGoogle from "./components/MapGoogle";
-
 
 function App() {
   
@@ -11,7 +9,6 @@ function App() {
     <>
       <Routes>
         <Route path={`${routes.home}/:name`} element={<Home />} />
-        {/* <Route path={`${routes.map}`} element={<MapGoogle />} /> */}
         <Route path={`${routes.notFound}`} element={<NotFound />} />
       </Routes>
     </>
