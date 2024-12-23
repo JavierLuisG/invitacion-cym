@@ -15,7 +15,7 @@ export const Home = () => {
         <TimeRealize />
         <Places />
         <SectionDetail />
-        {/* <OurLove /> */}
+        <OurLove />
       </div>
     </div>
   );

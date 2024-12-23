@@ -517,7 +517,7 @@ h3 {
   position: absolute;
   bottom: -2em;
   transform: rotate(180deg) scaleX(-1);
-  right: 10px;        
+  right: 10px;
 
   & img {
     width: 98vw;
@@ -618,21 +618,24 @@ h3 {
   }
 }
 
-:is(.container_section_detail, .title_detail) {
+:is(.container_section_detail) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
 /* ---------------------------------------------------------------------- */
 /* =========================== Ourlove Section ========================== */
 /* ---------------------------------------------------------------------- */
+.container_section_ourlove {
+  position: relative;
+}
+
 .foto_icon {
-  width: 70px;
+  width: 6em;
   border-bottom: 2px solid var(--primary-color);
 }
 
 .carousel {
   padding: auto;
-  /* ToDo: se pone lo que realmente va */
 }
 
 .img_carousel {
@@ -640,10 +643,30 @@ h3 {
   max-width: 650px;
 }
 
-.title span {
-  /* ourlove */
-  font-size: larger;
-  font-weight: bold;
+.slider {
+  aspect-ratio: 10 / 7;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: thin;
+}
+
+.slider img {
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+:is(.container_section_ourlove) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -663,13 +686,17 @@ h3 {
 /* ---------------------------------------------------------------------- */
 
 @media (min-width: 730px) {
-  .container_section_detail {
+
+  .container_section_detail,
+  .container_section_ourlove {
     padding-top: 9em;
   }
 }
 
 @media (min-width: 1000px) {
-  .container_section_detail {
+
+  .container_section_detail,
+  .container_section_ourlove {
     padding-top: 13em;
   }
 }
@@ -680,13 +707,4 @@ h3 {
     flex-direction: column;
     gap: 5em;
   }
-
-  /* .img_onda_delgada3 {
-    bottom: 4em;
-  }
-
-  .img_onda_delgada4 {
-    bottom: 3.8em;
-    transform: rotate(180deg);
-  } */
 }

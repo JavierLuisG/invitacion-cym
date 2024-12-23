@@ -16,10 +16,8 @@ const SectionDetail = () => {
       <div className="img_onda_delgada_detail2">
         <img src="/img_onda_delgada.svg" />
       </div>
-      <div className="title_detail">
-        <h2>Detalles</h2>
-      </div>
-      <div className="container_dress_code flex_row">
+      <h2>Detalles</h2>
+      <div className="flex_row">
         <div className="suit_container flex_column">
           <img className="img_suit_man" src="/img_suit_man.svg" alt="" />
         </div>
