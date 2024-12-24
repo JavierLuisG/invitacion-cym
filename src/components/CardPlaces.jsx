@@ -37,6 +37,10 @@ const CardPlaces = ({ info }) => {
             <p>{info.place.info}</p>
             {/* <p>{info.place2.info}</p> */}
           </div>
+          <div className="section_info_places">
+            <p className="info_places_title">{info.address.title}</p>
+            <p>{info.address.info}</p>
+          </div>
           <Link
             to={`https://www.google.com/maps/dir/?api=1&destination=${destino}`}
             target="_blank"
@@ -48,8 +52,8 @@ const CardPlaces = ({ info }) => {
             </button>
           </Link>
           <div className="section_info_places">
-            <p className="info_places_title">{info.address.title}</p>
-            <p>{info.address.info}</p>
+            <p className="info_places_title">Parqueadero</p>
+            <p>Si nos acomapañas en la <br/> comodidad de tu vehículo.</p>
           </div>
           <Link
             to={`https://www.google.com/maps/dir/?api=1&destination=${info.parkinglot.info}`}
@@ -58,7 +62,7 @@ const CardPlaces = ({ info }) => {
             onClick={handleClick}
           >
             <button className="btn_card_places flex_row">
-              <div className="text_map_card">{info.parkinglot.title}</div>
+              <div className="text_map_card">¿Cómo llegar?</div>
             </button>
           </Link>
         </div>

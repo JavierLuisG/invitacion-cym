@@ -49,6 +49,7 @@ h3 {
   text-align: center;
   padding: 7em 0em 5em 0em;
   gap: 1.5em;
+  background-image: url("/images/oliva_fondo.webp");
 }
 
 .flex_row {
@@ -88,7 +89,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_head {
   /* row box */
-  padding-top: 9em;
+  padding: 4em 0em 9em 0em;
   position: relative;
 }
 
@@ -162,7 +163,7 @@ h3 {
   /* column title */
   height: 100vh;
   position: relative;
-  background-image: url("/images/oliva_fondo.webp");
+  /* background-image: url("/images/oliva_fondo.webp"); */
 }
 
 .fondo_pareja {
@@ -266,7 +267,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   position: relative;
-  padding-bottom: 1em;
+  padding: 1em 0em;
 }
 
 .container_circle_time {
@@ -627,6 +628,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
+  padding-bottom: 3em;
 }
 
 .foto_icon {
@@ -645,8 +647,8 @@ h3 {
 
 .slider {
   aspect-ratio: 10 / 7;
-  width: 90%;
-  max-width: 700px;
+  width: 95%;
+  max-width: 800px;
   position: relative;
   display: flex;
   overflow-x: auto;
@@ -693,6 +695,38 @@ h3 {
   }
 }
 
+@media (max-width: 730px) {
+
+  .container_section_detail,
+  .container_section_ourlove {
+    padding-top: 9em;
+  }
+
+  .img_rama_hortensia_places {
+    top: calc(5.5em + 1.4em);
+  
+    & img {
+      width: 11em;
+    }
+  }
+  
+  .img_rama_hortensia_2_places {
+    top: calc(2.5em + 1.4em);
+  
+    & img {
+      width: 11em;
+    }
+  }
+
+  .img_hortensia_places {
+    top: calc(3.5em + 1.4em);
+
+    & img {
+      width: 7em;
+    }
+  }
+}
+
 @media (min-width: 1000px) {
 
   .container_section_detail,
@@ -706,5 +740,14 @@ h3 {
     /* row box */
     flex-direction: column;
     gap: 5em;
+  }
+
+  .img_onda_delgada3 {
+    bottom: calc(-1em - 32em);
+  }
+  
+  .img_onda_delgada4 {
+    bottom: calc(-2em - 32em);
+    transform: rotate(180deg) scaleX(1);
   }
 }
