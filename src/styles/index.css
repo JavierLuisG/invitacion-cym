@@ -743,11 +743,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    bottom: calc(-1em - 32em);
+    bottom: calc(-1em - 37em);
   }
   
   .img_onda_delgada4 {
-    bottom: calc(-2em - 32em);
+    bottom: calc(-2em - 37em);
     transform: rotate(180deg) scaleX(1);
   }
 }
