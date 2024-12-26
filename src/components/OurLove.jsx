@@ -18,12 +18,15 @@ const OurLove = () => {
         <h2>Nuestro Amor</h2>
         <img className="foto_icon" src="/camera.svg" alt="" />
       </div>
-      <div className="slider">
-        <img src="/images/IMG_2710.jpg" alt="" />
-        <img src="/images/IMG_2469.jpg" alt="" />
-        <img src="/images/IMG_2625.jpg" alt="" />
-        <img src="/images/IMG_2827.jpg" alt="" />
-        <img src="/images/IMG_2860.jpg" alt="" />
+      <div className="container_slider">
+        <div className="slider">
+          <img src="/images/IMG_2827.jpg" alt="" />
+          <img src="/images/IMG_2710.jpg" alt="" />
+          <img src="/images/IMG_2469.jpg" alt="" />
+          <img src="/images/IMG_2625.jpg" alt="" />
+          <img src="/images/IMG_2860.jpg" alt="" />
+        </div>
+        <img className="dots_icon" src="/dots-3.svg" alt="" />
       </div>
     </div>
   );

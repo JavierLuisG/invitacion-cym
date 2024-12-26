@@ -628,12 +628,13 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 .foto_icon {
   width: 6em;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 1.5px solid var(--primary-color);
+  /* margin-bottom: 1em; */
 }
 
 .carousel {
@@ -645,9 +646,22 @@ h3 {
   max-width: 650px;
 }
 
+.container_slider {
+  width: 95%;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--text-btn-color);
+  box-shadow: 0px 0px 20px -6px var(--secondary-color);
+  border-radius: 5px;
+  padding: 1em 0.6em 2.5em 0.6em; */
+}
+
 .slider {
   aspect-ratio: 10 / 7;
-  width: 95%;
+  width: 100%;
   max-width: 800px;
   position: relative;
   display: flex;
@@ -665,6 +679,10 @@ h3 {
   object-fit: cover;
   border-radius: 5px;
   scroll-snap-align: center;
+}
+
+.dots_icon {
+  width: 2.5em;
 }
 
 :is(.container_section_ourlove) {
