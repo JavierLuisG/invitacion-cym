@@ -42,9 +42,10 @@ const SectionDetail = () => {
         </p>
       </div>
       <div className="flex_column">
-        <p style={{ width: "90%", textAlign: "center" }}>
-          Nos encanta la compañía de los niños, pero hemos reservado un sitio
-          solo para adultos.
+        <p style={{ width: "100%", textAlign: "center" }}>
+          Papá y mamá ¡disfrutemos de esta noche!
+          <br />
+          <b>niños dulces sueños.</b>
         </p>
       </div>
     </div>
