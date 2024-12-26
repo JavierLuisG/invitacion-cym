@@ -20,8 +20,6 @@ const Gifts = () => {
         <div className="gifts_content flex_row">
           <div>
             <p>
-              Nuestro mejor regalo es tu compañía en este día tan especial.
-              <br />
               Te invitamos a ser parte de nuestra lluvia de sobres.
               <br />
               <br />

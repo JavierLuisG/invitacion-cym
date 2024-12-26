@@ -351,7 +351,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
-/* =========================== Places Section =========================== */
+/* =========================== PLACES Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_places {
   /* row box */
@@ -530,7 +530,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
-/* =========================== Detail Section =========================== */
+/* =========================== DETAIL Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_section_detail {
   position: relative;
@@ -624,7 +624,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
-/* =========================== Ourlove Section ========================== */
+/* =========================== OURLOVE Section ========================== */
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
@@ -635,15 +635,6 @@ h3 {
   width: 6em;
   border-bottom: 1.5px solid var(--primary-color);
   /* margin-bottom: 1em; */
-}
-
-.carousel {
-  padding: auto;
-}
-
-.img_carousel {
-  width: 100%;
-  max-width: 650px;
 }
 
 .container_slider {
@@ -682,7 +673,7 @@ h3 {
 }
 
 .dots_icon {
-  width: 2.5em;
+  width: 3em;
 }
 
 :is(.container_section_ourlove) {
@@ -690,7 +681,7 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------- */
-/* ============================ Gifts Section =========================== */
+/* ============================ GIFTS Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_section_gifts {
   position: relative;
@@ -803,7 +794,8 @@ h3 {
     padding-top: 9em;
   }
 
-  .img_rama_hortensia_places {
+  .img_rama_hortensia_places,
+  .img_rama_hortensia_gifts {
     top: calc(5.5em + 1.4em);
 
     & img {
@@ -811,7 +803,8 @@ h3 {
     }
   }
 
-  .img_rama_hortensia_2_places {
+  .img_rama_hortensia_2_places,
+  .img_rama_hortensia_2_gifts {
     top: calc(2.5em + 1.4em);
 
     & img {
@@ -819,7 +812,8 @@ h3 {
     }
   }
 
-  .img_hortensia_places {
+  .img_hortensia_places,
+  .img_hortensia_gifts {
     top: calc(3.5em + 1.4em);
 
     & img {

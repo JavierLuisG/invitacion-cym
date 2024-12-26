@@ -36,14 +36,14 @@ const SectionDetail = () => {
         </div>
       </div>
       <div className="flex_column">
-        <p style={{ width: "90%", textAlign: "center" }}>
+        <p style={{ width: "100%", textAlign: "center" }}>
           ¡Será una boda encantadora! <br />
-          Para nosotros es importante reservar el color blanco y verde.
+          Reservado color <b>Verde y Blanco</b>.
         </p>
       </div>
       <div className="flex_column">
         <p style={{ width: "90%", textAlign: "center" }}>
-          Nos escanta la compañia de los niños pero hemos reservado un sitio
+          Nos encanta la compañía de los niños, pero hemos reservado un sitio
           solo para adultos.
         </p>
       </div>

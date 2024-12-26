@@ -48,12 +48,12 @@ const CardPlaces = ({ info }) => {
             onClick={handleClick}
           >
             <button className="btn_card_places flex_row">
-              <div className="text_map_card">Ver mapa</div>
+              <div className="text_map_card">Entrada principal</div>
             </button>
           </Link>
           <div className="section_info_places">
-            <p className="info_places_title">Parqueadero</p>
-            <p>Si nos acomapañas en la <br/> comodidad de tu vehículo.</p>
+            {/* <p className="info_places_title">Parqueadero</p> */}
+            <p>Si llevas tu vehículo </p>
           </div>
           <Link
             to={`https://www.google.com/maps/dir/?api=1&destination=${info.parkinglot.info}`}
@@ -62,7 +62,7 @@ const CardPlaces = ({ info }) => {
             onClick={handleClick}
           >
             <button className="btn_card_places flex_row">
-              <div className="text_map_card">¿Cómo llegar?</div>
+              <div className="text_map_card">Parqueadero</div>
             </button>
           </Link>
         </div>
