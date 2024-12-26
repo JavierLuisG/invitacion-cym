@@ -728,7 +728,7 @@ h3 {
   position: absolute;
   top: 6em;
   z-index: 1;
-  left: -1em;
+  left: -0.5em;
   transform: rotate(-45deg);
 
   & img {
@@ -738,9 +738,9 @@ h3 {
 
 .img_rama_hortensia_2_gifts {
   position: absolute;
-  top: 3em;
+  top: 1.5em;
   z-index: 1;
-  left: -2em;
+  left: -1em;
   transform: rotate(45deg) scaleY(-1);
 
   & img {
