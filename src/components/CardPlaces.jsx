@@ -35,7 +35,6 @@ const CardPlaces = ({ info }) => {
           <div className="section_info_places">
             <p className="info_places_title">{info.place.title}</p>
             <p>{info.place.info}</p>
-            {/* <p>{info.place2.info}</p> */}
           </div>
           <div className="section_info_places">
             <p className="info_places_title">{info.address.title}</p>
@@ -48,14 +47,13 @@ const CardPlaces = ({ info }) => {
             onClick={handleClick}
           >
             <button className="btn_card_places flex_row">
-              <div className="text_map_card">Entrada principal</div>
+              <div className="text_map_card">Ver mapa</div>
             </button>
           </Link>
-          <div className="section_info_places">
-            {/* <p className="info_places_title">Parqueadero</p> */}
+          {/* <div className="section_info_places">
             <p>Si llevas tu vehículo </p>
-          </div>
-          <Link
+          </div> */}
+          {/* <Link
             to={`https://www.google.com/maps/dir/?api=1&destination=${info.parkinglot.info}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -64,7 +62,7 @@ const CardPlaces = ({ info }) => {
             <button className="btn_card_places flex_row">
               <div className="text_map_card">Parqueadero</div>
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

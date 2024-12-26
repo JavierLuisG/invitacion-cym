@@ -27,6 +27,19 @@ export const TimeRealize = () => {
 
   return (
     <div className="container_time_realize flex_column box">
+      <div className="rama_detail">
+        <img src="/images/oliva_rama_dos_par.webp" />
+      </div>
+      <img
+        className="img_curvas_doble_derecha_detail"
+        src="/img_curvas_doble_derecha.svg"
+      />
+      <div className="img_onda_delgada_detail1">
+        <img src="/img_onda_delgada.svg" />
+      </div>
+      <div className="img_onda_delgada_detail2">
+        <img src="/img_onda_delgada.svg" />
+      </div>
       <div className="title_time">
         <h2>¡Te esperamos!</h2>
       </div>

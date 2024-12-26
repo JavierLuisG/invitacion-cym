@@ -267,7 +267,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   position: relative;
-  padding: 1em 0em;
+  padding-bottom: 0em;
 }
 
 .container_circle_time {
@@ -436,11 +436,12 @@ h3 {
 
 .btn_card_places {
   /* row */
-  width: 100%;
+  /* width: 100%; */
+  margin: auto;
   border: none;
   background-color: var(--primary-color);
-  padding: 0.5em 6em;
-  border-radius: 30px;
+  padding: 0.5em 5em;
+  border-radius: 1em;
   gap: 1em;
   cursor: pointer;
 
@@ -628,7 +629,7 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
-  padding-bottom: 2em;
+  padding-top: 0em;
 }
 
 .foto_icon {
@@ -686,6 +687,7 @@ h3 {
 .container_section_gifts {
   position: relative;
   padding-top: 0em;
+  padding-bottom: 3em;
   max-width: 1200px;
 }
 
@@ -781,16 +783,20 @@ h3 {
 
 @media (min-width: 730px) {
 
-  .container_section_detail,
-  .container_section_ourlove {
+  .container_time_realize,
+  .container_section_detail {
     padding-top: 9em;
   }
+  
+    .img_onda_desc_timerealize {
+      display: none;
+    }
 }
 
 @media (max-width: 730px) {
-
-  .container_section_detail,
-  .container_section_ourlove {
+  
+  .container_time_realize,
+  .container_section_detail {
     padding-top: 9em;
   }
 
@@ -824,8 +830,8 @@ h3 {
 
 @media (min-width: 1000px) {
 
-  .container_section_detail,
-  .container_section_ourlove {
+  .container_time_realize,
+  .container_section_detail {
     padding-top: 13em;
   }
 }

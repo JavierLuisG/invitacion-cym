@@ -13,11 +13,11 @@ export const Home = () => {
       <div className="container_home flex_column">
         <GuestPresentation />
         <Head />
-        <OurLove />
         <TimeRealize />
         <Places />
         <SectionDetail />
         <Gifts />
+        <OurLove />
       </div>
     </div>
   );
