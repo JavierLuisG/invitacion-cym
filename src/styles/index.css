@@ -720,7 +720,7 @@ h3 {
 .container_flor_ramas_gifts {
   position: absolute;
   top: -3.5em;
-  left: 2.5em;
+  left: 3em;
   transform: rotate(45deg);
 }
 
@@ -838,11 +838,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    bottom: calc(-1em - 37em);
+    bottom: calc(-1em - 34em);
   }
 
   .img_onda_delgada4 {
-    bottom: calc(-2em - 37.7em);
+    bottom: calc(-2em - 34.7em);
     transform: rotate(180deg) scaleX(1);
   }
 }
