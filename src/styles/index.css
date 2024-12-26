@@ -677,7 +677,7 @@ h3 {
   left: 0;
   position: sticky;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.4em;
   scroll-snap-align: center;
 }
 
@@ -686,6 +686,89 @@ h3 {
 }
 
 :is(.container_section_ourlove) {
+  font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
+}
+
+/* ---------------------------------------------------------------------- */
+/* ============================ Gifts Section =========================== */
+/* ---------------------------------------------------------------------- */
+.container_section_gifts {
+  position: relative;
+  padding-top: 0em;
+  max-width: 1200px;
+}
+
+.container_gifts_card {
+  width: 95%;
+  gap: 1em;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5em;
+  padding: 1em;
+
+  h2 {
+    color: var(--text-btn-color);
+    font-weight: lighter;
+  }
+  
+  p {
+    color: var(--text-btn-color);
+    font-size: 1.2em;
+  }
+}
+
+.gifts_content {
+  width: 100%;
+  gap: 2em;
+}
+
+.gifts_icon {
+  width: 3.5em;
+}
+
+.container_flor_ramas_gifts {
+  position: absolute;
+  top: -3.5em;
+  left: 2.5em;
+  transform: rotate(45deg);
+}
+
+.img_rama_hortensia_gifts {
+  position: absolute;
+  top: 6em;
+  z-index: 1;
+  left: -1em;
+  transform: rotate(-45deg);
+
+  & img {
+    width: 14em;
+  }
+}
+
+.img_rama_hortensia_2_gifts {
+  position: absolute;
+  top: 3em;
+  z-index: 1;
+  left: -2em;
+  transform: rotate(45deg) scaleY(-1);
+
+  & img {
+    width: 14em;
+  }
+}
+
+.img_hortensia_gifts {
+  position: relative;
+  top: 3.5em;
+  right: 2em;
+  z-index: 2;
+
+  & img {
+    width: 9em;
+  }
+}
+
+:is(.container_section_gifts) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
 
@@ -722,15 +805,15 @@ h3 {
 
   .img_rama_hortensia_places {
     top: calc(5.5em + 1.4em);
-  
+
     & img {
       width: 11em;
     }
   }
-  
+
   .img_rama_hortensia_2_places {
     top: calc(2.5em + 1.4em);
-  
+
     & img {
       width: 11em;
     }
@@ -763,7 +846,7 @@ h3 {
   .img_onda_delgada3 {
     bottom: calc(-1em - 37em);
   }
-  
+
   .img_onda_delgada4 {
     bottom: calc(-2em - 37.7em);
     transform: rotate(180deg) scaleX(1);

@@ -5,6 +5,7 @@ import Places from "../components/Places";
 import OurLove from "../components/OurLove";
 import GuestPresentation from "../components/GuestPresentation";
 import SectionDetail from "../components/SectionDetail";
+import Gifts from "../components/Gifts";
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
         <TimeRealize />
         <Places />
         <SectionDetail />
+        <Gifts />
       </div>
     </div>
   );
