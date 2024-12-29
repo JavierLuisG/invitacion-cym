@@ -163,7 +163,6 @@ h3 {
   /* column title */
   height: 100vh;
   position: relative;
-  /* background-image: url("/images/oliva_fondo.webp"); */
 }
 
 .fondo_pareja {
@@ -267,7 +266,27 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_time_realize {
   position: relative;
-  padding-bottom: 0em;
+  padding: 0em;
+}
+
+.img_onda_delgada_timerealize1 {
+  position: absolute;
+  top: -5em;
+  transform: scaleX(-1);
+
+  & img {
+    width: 100vw;
+  }
+}
+
+.img_onda_delgada_timerealize2 {
+  position: absolute;
+  top: -5em;
+  transform: scaleX(-1);
+
+  & img {
+    width: 100vw;
+  }
 }
 
 .container_circle_time {
@@ -436,7 +455,6 @@ h3 {
 
 .btn_card_places {
   /* row */
-  /* width: 100%; */
   margin: auto;
   border: none;
   background-color: var(--primary-color);
@@ -629,13 +647,12 @@ h3 {
 /* ---------------------------------------------------------------------- */
 .container_section_ourlove {
   position: relative;
-  padding-top: 0em;
+  padding: 0em 0em 2em 0em;
 }
 
 .foto_icon {
   width: 6em;
   border-bottom: 1.5px solid var(--primary-color);
-  /* margin-bottom: 1em; */
 }
 
 .container_slider {
@@ -645,10 +662,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--text-btn-color);
-  box-shadow: 0px 0px 20px -6px var(--secondary-color);
-  border-radius: 5px;
-  padding: 1em 0.6em 2.5em 0.6em; */
 }
 
 .slider {
@@ -703,7 +716,7 @@ h3 {
     color: var(--text-btn-color);
     font-weight: lighter;
   }
-  
+
   p {
     color: var(--text-btn-color);
     font-size: 1.2em;
@@ -783,19 +796,15 @@ h3 {
 
 @media (min-width: 730px) {
 
-  .container_time_realize,
+  .container_section_ourlove,
   .container_section_detail {
     padding-top: 9em;
   }
-  
-    .img_onda_desc_timerealize {
-      display: none;
-    }
 }
 
 @media (max-width: 730px) {
-  
-  .container_time_realize,
+
+  .container_section_ourlove,
   .container_section_detail {
     padding-top: 9em;
   }
@@ -830,7 +839,7 @@ h3 {
 
 @media (min-width: 1000px) {
 
-  .container_time_realize,
+  .container_section_ourlove,
   .container_section_detail {
     padding-top: 13em;
   }
@@ -844,11 +853,11 @@ h3 {
   }
 
   .img_onda_delgada3 {
-    bottom: calc(-1em - 34em);
+    bottom: calc(-1em - 28em);
   }
 
   .img_onda_delgada4 {
-    bottom: calc(-2em - 34.7em);
+    bottom: calc(-2em - 28.7em);
     transform: rotate(180deg) scaleX(1);
   }
 }

@@ -1,6 +1,19 @@
 const OurLove = () => {
   return (
     <div className="container_section_ourlove flex_column box">
+      <div className="rama_detail">
+        <img src="/images/oliva_rama_dos_par.webp" />
+      </div>
+      <img
+        className="img_curvas_doble_derecha_detail"
+        src="/img_curvas_doble_derecha.svg"
+      />
+      <div className="img_onda_delgada_detail1">
+        <img src="/img_onda_delgada.svg" />
+      </div>
+      <div className="img_onda_delgada_detail2">
+        <img src="/img_onda_delgada.svg" />
+      </div>
       <div className="flex_column">
         <h2>Nuestro Amor</h2>
         <img className="foto_icon" src="/camera.svg" alt="" />
