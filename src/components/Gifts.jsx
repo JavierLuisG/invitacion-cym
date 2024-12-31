@@ -15,15 +15,17 @@ const Gifts = () => {
         </div>
       </div>
       <div className="container_gifts_card flex_column">
-        <h2>Regalos</h2>
-        <img className="gifts_icon" src="/gifts.svg" alt="" />
+        {/* <h2>Regalos</h2> */}
+        <img className="gifts_icon" src="/money-gift.svg" alt="" />
         <div className="gifts_content flex_row">
           <div>
             <p>
-              Te invitamos a ser parte de nuestra lluvia de sobres.
+              {/* Te invitamos a ser parte de nuestra lluvia de sobres. */}
+              Nuestro mejor regalo es tu compañía, pero si quieres tener un
+              detalle, habrá lluvia de sobres.
+              {/* <br />
               <br />
-              <br />
-              ¡Gracias por compartir este momento tan importante con nosotros!
+              ¡Gracias por compartir este momento tan importante con nosotros! */}
             </p>
           </div>
         </div>

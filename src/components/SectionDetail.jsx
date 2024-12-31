@@ -23,7 +23,7 @@ const SectionDetail = () => {
         </div>
         <div className="flex_column">
           <div className="title_dress_code">
-            <p>Dress Code</p>
+            {/* <p>Dress Code</p> */}
             <p>FORMAL</p>
           </div>
           <div className="hr_heart flex_column">
@@ -37,17 +37,16 @@ const SectionDetail = () => {
       </div>
       <div className="flex_column">
         <p style={{ width: "100%", textAlign: "center" }}>
-          ¡Será una boda encantadora! <br />
-          Reservado color <b>Verde y Blanco</b>.
+          Hemos reservado los colores<br /> <b>blanco y verde</b>  para esta ocasión. 
         </p>
       </div>
-      <div className="flex_column">
+      {/* <div className="flex_column">
         <p style={{ width: "100%", textAlign: "center" }}>
           Papá y mamá ¡disfrutemos de esta noche!
           <br />
           <b>niños dulces sueños.</b>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

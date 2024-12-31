@@ -17,8 +17,8 @@ const Head = () => {
         </h1>
         <hr aria-orientation="horizontal" className="hr_line line_bottom" />
         <p className="text_head text_secondary_p">
-          El destino nos puso en el mismo camino y ahora caminaremos juntos
-          hasta el fin.
+          Llenos de gratitud, hemos encontrado en Dios y en el amor mutuo la
+          fuerza para dar este paso. Te invitamos a acompañarnos en este día.
         </p>
       </div>
     </div>

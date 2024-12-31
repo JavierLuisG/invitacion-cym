@@ -15,7 +15,7 @@ const OurLove = () => {
         <img src="/img_onda_delgada.svg" />
       </div>
       <div className="flex_column">
-        <h2>Nuestro Amor</h2>
+        {/* <h2>Nuestro Amor</h2> */}
         <img className="foto_icon" src="/camera.svg" alt="" />
       </div>
       <div className="container_slider">
@@ -27,6 +27,15 @@ const OurLove = () => {
           <img src="/images/IMG_2696.jpg" alt="" />
         </div>
         <img className="dots_icon" src="/dots-3.svg" alt="" />
+      </div>
+      <div className="container_txt_biblica">
+        <p>
+          "Más valen dos que uno solo, pues obtienen mayor ganancia de su
+          esfuerzo. Pues si cayeren, el uno levantará a su compañero; pero ¡ay
+          del solo que cae!, que no tiene quien lo levante. La cuerda de tres
+          hilos no es fácil de romper." <br /> <br />
+        </p>
+        <p className="lectura">Ecle 4, 9-12.</p>
       </div>
     </div>
   );

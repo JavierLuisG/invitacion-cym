@@ -46,10 +46,10 @@ export const TimeRealize = () => {
         <div className="img_onda_desc_timerealize">
           <img src="/img_onda_desc.svg" />
         </div>
-        <img
+        {/* <img
           className="img_anillos_timerealize"
           src="/images/anillo-de-bodas-verde.png"
-        />
+        /> */}
       </div>
     </div>
   );

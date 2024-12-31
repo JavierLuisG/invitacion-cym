@@ -690,6 +690,21 @@ h3 {
   width: 3em;
 }
 
+.container_txt_biblica {
+  width: 90%;
+  max-width: 800px;
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .lectura {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+}
+
 :is(.container_section_ourlove) {
   font-size: clamp(0.8rem, 0.8vw + 0.8rem, 7rem);
 }
@@ -705,7 +720,7 @@ h3 {
 }
 
 .container_gifts_card {
-  width: 95%;
+  width: 85%;
   gap: 1em;
   border: 1px solid var(--secondary-color);
   background-color: var(--secondary-color);
@@ -726,6 +741,11 @@ h3 {
 .gifts_content {
   width: 100%;
   gap: 2em;
+
+  p {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .gifts_icon {
@@ -734,8 +754,8 @@ h3 {
 
 .container_flor_ramas_gifts {
   position: absolute;
-  top: -3.5em;
-  left: 3em;
+  top: -4em;
+  left: 5em;
   transform: rotate(45deg);
 }
 
@@ -747,7 +767,7 @@ h3 {
   transform: rotate(-45deg);
 
   & img {
-    width: 14em;
+    width: 12em;
   }
 }
 
@@ -759,7 +779,7 @@ h3 {
   transform: rotate(45deg) scaleY(-1);
 
   & img {
-    width: 14em;
+    width: 12em;
   }
 }
 
@@ -770,7 +790,7 @@ h3 {
   z-index: 2;
 
   & img {
-    width: 9em;
+    width: 8em;
   }
 }
 
