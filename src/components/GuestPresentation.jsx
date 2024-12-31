@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 const GuestPresentation = () => {
+  // const imgjson = imgJson;
   const params = useParams();
   return (
     <div className="container_guest title flex_column box">
