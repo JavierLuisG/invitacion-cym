@@ -9,6 +9,7 @@
   --text-btn-color: #ffffff;
 
   --bg-guest: #ddebc2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* =========================== GENERAL STYLES =========================== */
@@ -307,10 +308,11 @@ h3 {
 
 .oliva_contador_redondo_timerealize {
   position: relative;
+  left: -1.3em;
   z-index: 2;
 
   & img {
-    width: 20em;
+    width: 22em;
   }
 }
 
@@ -700,8 +702,8 @@ h3 {
 
   .lectura {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.4em;
+    /* font-weight: bold; */
+    font-size: 1em;
   }
 }
 
@@ -713,13 +715,17 @@ h3 {
 /* ============================ GIFTS Section =========================== */
 /* ---------------------------------------------------------------------- */
 .container_section_gifts {
-  position: relative;
   padding-top: 0em;
   padding-bottom: 3em;
+}
+
+.section_gifts {
+  position: relative;
   max-width: 1200px;
 }
 
 .container_gifts_card {
+  margin: auto;
   width: 85%;
   gap: 1em;
   border: 1px solid var(--secondary-color);
