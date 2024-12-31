@@ -29,10 +29,10 @@ const OurLove = () => {
         <img className="dots_icon" src="/dots-3.svg" alt="" />
         <div className="container_txt_biblica">
           <p>
-            "Más valen dos que uno solo, pues obtienen mayor ganancia de su
-            esfuerzo. Pues si cayeren, el uno levantará a su compañero; pero ¡ay
-            del solo que cae!, que no tiene quien lo levante. [...] La cuerda de tres
-            hilos no es fácil de romper." <br />
+            Más valen dos que uno solo, pues obtienen mayor ganancia de su
+            esfuerzo. Si uno cae, lo levantará su compañero; pero ¡ay del solo
+            que cae!, que no tiene quien lo levante. [...] La cuerda de tres
+            hilos no es fácil de romper. <br />
           </p>
           <p className="lectura">Ecle 4, 9-12.</p>
         </div>
