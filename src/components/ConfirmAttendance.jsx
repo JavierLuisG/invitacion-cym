@@ -1,6 +1,8 @@
+import numContacts from "../mocks/numContact.json";
+
 const ConfirmAttendance = () => {
   const waMessage = `Hola 👋, quiero confirmar mi asistencia a tu boda 💒 💍. \n\n*Nota: _Esta celebración está reservada solo para adultos_.*`;
-
+  
   return (
     <div className="container_confirm flex_column box">
       <h2>Confirmar asistencia</h2>
@@ -11,7 +13,7 @@ const ConfirmAttendance = () => {
       <div>
         <div className="container_btns flex_row">
           <a
-            href={`https://wa.me/573209455269?text=${encodeURIComponent(
+            href={`https://wa.me/${numContacts[0].husband}?text=${encodeURIComponent(
               waMessage
             )}`}
             target="_blank"
@@ -22,7 +24,7 @@ const ConfirmAttendance = () => {
             <div className="text_btn_confirm">Cristian</div>
           </a>
           <a
-            href={`https://wa.me/573209455269?text=${encodeURIComponent(
+            href={`https://wa.me/${numContacts[1].wife}?text=${encodeURIComponent(
               waMessage
             )}`}
             target="_blank"
