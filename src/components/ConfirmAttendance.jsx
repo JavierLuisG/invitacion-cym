@@ -7,8 +7,7 @@ const ConfirmAttendance = () => {
     <div className="container_confirm flex_column box">
       <h2>Confirmar asistencia</h2>
       <p>
-        Tu asistencia es muy importante para nosotros, por favor confirma tu
-        asistencia a cualquiera de los dos por medio de WhatsApp
+        Confírmanos tu asistencia por medio de WhatsApp.
       </p>
       <div>
         <div className="container_btns flex_row">
