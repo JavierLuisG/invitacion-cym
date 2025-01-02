@@ -6,6 +6,7 @@ import OurLove from "../components/OurLove";
 import GuestPresentation from "../components/GuestPresentation";
 import SectionDetail from "../components/SectionDetail";
 import Gifts from "../components/Gifts";
+import ConfirmAttendance from "../components/ConfirmAttendance";
 
 export const Home = () => {
   return (
@@ -18,6 +19,7 @@ export const Home = () => {
         <Places />
         <SectionDetail />
         <Gifts />
+        <ConfirmAttendance />
       </div>
     </div>
   );
