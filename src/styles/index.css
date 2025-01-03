@@ -89,6 +89,37 @@ h3 {
 /* ---------------------------------------------------------------------- */
 /* ============================ MUSIC Section =========================== */
 /* ---------------------------------------------------------------------- */
+@keyframes waveEffect {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 70, 54, 0.6);
+  }
+
+  50% {
+    box-shadow: 0 0 15px 10px rgba(37, 70, 54, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 70, 54, 0);
+  }
+}
+
+@keyframes attentionPulse {
+  0% {
+    background-color: var(--bg-opacity);
+    box-shadow: 0 0 5px rgba(37, 70, 54, 0.2);
+  }
+
+  50% {
+    background-color: rgba(37, 70, 54, 0.6);
+    box-shadow: 0 0 15px 10px rgba(37, 70, 54, 0.3);
+  }
+
+  100% {
+    background-color: var(--bg-opacity);
+    box-shadow: 0 0 5px rgba(37, 70, 54, 0.2);
+  }
+}
+
 .container_music {
   position: fixed;
   right: 0.75em;
@@ -96,11 +127,10 @@ h3 {
   z-index: 1000;
   cursor: pointer;
 
-  border: 1px solid var(--bg-opacity-music);
   border-radius: 50%;
   width: 4em;
   height: 4em;
-  
+
   img {
     width: 2em;
   }
@@ -108,10 +138,12 @@ h3 {
 
 .isMusic {
   background-color: var(--bg-opacity-music);
+  animation: waveEffect 2s infinite;
 }
 
 .outMusic {
   background-color: var(--bg-opacity);
+  animation: attentionPulse 2s infinite;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -910,7 +942,7 @@ h3 {
 
 @media (max-width: 780px) {
   .container_btns {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1em;
   }
 }
