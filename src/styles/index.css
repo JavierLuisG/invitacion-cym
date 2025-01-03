@@ -106,17 +106,20 @@ h3 {
 @keyframes attentionPulse {
   0% {
     background-color: var(--bg-opacity);
-    box-shadow: 0 0 5px rgba(37, 70, 54, 0.2);
+    border: 1px solid var(--bg-opacity-music);
+    /* box-shadow: 0 0 5px rgba(37, 70, 54, 0.2); */
   }
 
   50% {
-    background-color: rgba(37, 70, 54, 0.6);
-    box-shadow: 0 0 15px 10px rgba(37, 70, 54, 0.3);
+    background-color: var(--bg-opacity-music);
+    border: 1px solid var(--bg-opacity-music);
+    /* box-shadow: 0 0 35px rgba(37, 70, 54, 0.5); */
   }
 
   100% {
     background-color: var(--bg-opacity);
-    box-shadow: 0 0 5px rgba(37, 70, 54, 0.2);
+    border: 1px solid var(--bg-opacity-music);
+    /* box-shadow: 0 0 5px rgba(37, 70, 54, 0.2); */
   }
 }
 
@@ -143,7 +146,7 @@ h3 {
 
 .outMusic {
   background-color: var(--bg-opacity);
-  animation: attentionPulse 2s infinite;
+  animation: attentionPulse 2.5s infinite;
 }
 
 /* ---------------------------------------------------------------------- */
